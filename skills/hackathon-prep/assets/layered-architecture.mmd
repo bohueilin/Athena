@@ -1,0 +1,55 @@
+%% Layered architecture starter for an AGENT CONTROL-PLANE / credential-broker product.
+%% Renders on GitHub and at https://mermaid.live (export PNG/SVG for slides).
+%% Adapt the layer/node labels to YOUR system. Keep it ~5 layers — legible beats exhaustive.
+%% The numbered edges trace ONE real action end-to-end (the "request lifecycle" judges ask you to walk).
+%% The dashed boxes are TRUST BOUNDARIES — the lines secrets/authority must never cross. Those are the
+%% most important marks on the diagram; lead your depth Q&A with the one that's your moat.
+
+flowchart TB
+    subgraph L1["① User / intent"]
+        U["Human — speaks/types intent<br/>approves side-effects"]
+    end
+
+    subgraph L2["② Client surface (holds NO secrets)"]
+        C["App UI — sends intent,<br/>renders plan + approvals"]
+    end
+
+    subgraph L3["③ Control plane — the moat"]
+        BRAIN["Intent → plan"]
+        POLICY["Policy / capability engine<br/>capability ≠ permission<br/>read vs commit; GLOBAL_FORBIDDEN"]
+        APPR["Approval gate<br/>one-shot human OK"]
+        AUDIT["Tamper-evident audit"]
+    end
+
+    subgraph L4["④ Broker / authority layer (server-side only)"]
+        LEASE["Mint scoped, ephemeral,<br/>revocable lease → opaque handle"]
+        RESOLVE["Resolve secret JIT at the<br/>tool boundary — never returned"]
+    end
+
+    subgraph L5["⑤ External world"]
+        EXT["Tools / APIs / payments<br/>(DoorDash, Discord, wallet…)"]
+    end
+
+    U -- "1. intent" --> C
+    C -- "2. POST intent" --> BRAIN
+    BRAIN -- "3. propose plan" --> POLICY
+    POLICY -- "4. issue scoped grant" --> LEASE
+    POLICY -- "5. side-effect? require approval" --> APPR
+    U -- "6. approve (one-shot)" --> APPR
+    APPR -- "7. unlock commit" --> RESOLVE
+    LEASE -- "handle (no secret)" --> RESOLVE
+    RESOLVE -- "8. brokered call w/ secret" --> EXT
+    EXT -- "9. redacted result" --> AUDIT
+    AUDIT -- "10. result to user" --> C
+
+    %% ---- Trust boundaries (the lines that must never be crossed) ----
+    classDef secret fill:#fff3f3,stroke:#c0392b,stroke-width:2px,stroke-dasharray:5 4;
+    classDef plane fill:#eef4ff,stroke:#2f6df6,stroke-width:2px;
+    class L4 secret
+    class L3 plane
+
+    %% Boundary annotations to say out loud:
+    %%  • Secret never enters the model/agent context — resolved in L4, gone when the call returns.
+    %%  • Client (L2) never sees a credential — only opaque handles + redacted results.
+    %%  • Capability ≠ permission: a read grant can NEVER escalate to a side-effect without L3 approval —
+    %%    so even a prompt-injected agent can read but never act.

@@ -1,0 +1,150 @@
+# Relevance Triage — corpus vs. Origin/Passport agent-security
+
+> **Heuristic**, computed deterministically from ontology tags (not a hand read). `core` = touches an agentic attack (prompt-injection, tool-abuse, confused-deputy, reward/verifier-gaming, cross-agent deception…) OR pairs an agentic surface (tool/agent/memory/human-approval/retrieval) with an enforcement defense (policy-gating, capability-isolation, least-privilege, human-approval…). `adjacent` = classic ML-security/privacy that informs but isn't agent-loadbearing. `peripheral` = off-topic for agent security.
+
+| tier | papers | share |
+|---|--:|--:|
+| core | 137 | 31% |
+| adjacent | 245 | 56% |
+| peripheral | 50 | 11% |
+| **total** | **432** | 100% |
+
+## Core (agent-security load-bearing)
+
+- **A36989** (Multi-keyword-match, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) Unveiling the Attribute 
+- **A36993** (Multi-keyword-match, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) Failure Localization in 
+- **A36994** (Multi-keyword-match, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) GARNET: GoT-Based Alert 
+- **A36996** (AILLM-Safety, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) CHASE: Contextual Histor
+- **A37005** (Multi-keyword-match, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) Towards Distance-Invaria
+- **A37082** (Adversarial-ML-Attacks, ev:strong) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) CP-FREEZER: Latency Atta
+- **A37106** (AILLM-Safety, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) Where to Start Alignment
+- **A37117** (Adversarial-ML-Attacks, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) Authority Backdoor: A Ce
+- **A37118** (Adversarial-ML-Attacks, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) HogVul: Black-box Advers
+- **A37135** (Privacy-Protection, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) PriAgent: A Collaborativ
+- **A37203** (AILLM-Safety, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) Exploiting Synergistic C
+- **A37350** (AILLM-Safety, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) EigenShield: Inference-T
+- **A37389** (Adversarial-ML-Attacks, ev:preliminary) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) Disentangling Adversaria
+- **A37426** (Adversarial-ML-Attacks, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) ROVER: Robust Generative
+- **A37442** (Adversarial-ML-Attacks, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) LAMP: Learning Universal
+- **A37474** (Adversarial-ML-Attacks, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) False Positives Matter: 
+- **A37507** (Multi-keyword-match, ev:preliminary) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) Targeted Data Protection
+- **A37647** (Adversarial-ML-Attacks, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) Spatial-Spectral Homogen
+- **A37756** (Network-Cyber-Security, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) QRShield: Exploiting Vul
+- **A37844** (Network-Cyber-Security, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) TarPro: Targeted Protect
+- **A37924** (Defense-Mitigation, ev:strong) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) Certified but Fooled! Br
+- **A37945** (Deepfake-Forgery-Detection, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) FaceShield: Explainable 
+- **A38015** (Adversarial-ML-Attacks, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) MTAttack: Multi-Target B
+- **A38268** (Multi-keyword-match, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) AuthSig: Safeguarding Sc
+- **A38541** (Network-Cyber-Security, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) DGP: A Dual-Granularity 
+- **A38722** (Adversarial-ML-Attacks, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) Optimally Auditing Adver
+- **A38761** (Adversarial-ML-Attacks, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) Security Games with Laye
+- **A38785** (Adversarial-ML-Attacks, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) Hide and Seek with LLMs:
+- **A39199** (Model-IP-Protection, ev:preliminary) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) Robust Watermarking on
+- **A39344** (Multi-keyword-match, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) Robust Decentralized Mul
+- **A39373** (Privacy-Protection, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) An Information Theoretic
+- **A39438** (Adversarial-ML-Attacks, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) Adversarial Perturbation
+- **A39496** (Privacy-Protection, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) LLA: Enhancing Security 
+- **A39604** (Adversarial-ML-Attacks, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) G RAPH T EXTACK: A Reali
+- **A39803** (Adversarial-ML-Attacks, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) Guided Perturbation Sens
+- **A39818** (Defense-Mitigation, ev:preliminary) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) TowerMind: A Tower Defen
+- **A39911** (Privacy-Protection, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) R E M IS VFU: Vertical F
+- **A40018** (AILLM-Safety, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) TVChain: Leveraging Text
+- **A40045** (Privacy-Protection, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) Oblivionis: A Lightweigh
+- **A40176** (Adversarial-ML-Attacks, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) Adversarial Attack on Bl
+- **A40189** (Multi-keyword-match, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) Tapas Are Free! Training
+- **A40206** (Privacy-Protection, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) Equilibrium-Driven Verti
+- **A40210** (Network-Cyber-Security, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) Towards Effective Offens
+- **A40224** (Adversarial-ML-Attacks, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) Attack the Messages, Not
+- **A40231** (Multi-keyword-match, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) MPAS: Breaking Sequentia
+- **A40248** (AILLM-Safety, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) Rethinking Deep Alignmen
+- **A40269** (Multi-keyword-match, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) Can Editing LLMs Inject 
+- **A40295** (Adversarial-ML-Attacks, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) Persistent Backdoor Atta
+- **A40296** (AILLM-Safety, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) When Smiley Turns Hostil
+- **A40343** (Privacy-Protection, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) Beyond Superficial Forge
+- **A40353** (Adversarial-ML-Attacks, ev:strong) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) FACT 2F ICTION: Targeted
+- **A40398** (Privacy-Protection, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) Large Language Model Unl
+- **A40399** (AILLM-Safety, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) EduGuardBench: A Holisti
+- **A40432** (Defense-Mitigation, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) RAGFort: Dual-Path Defen
+- **A40433** (Multi-keyword-match, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) Do Not Merge My Model! S
+- **A40462** (Multi-keyword-match, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) Safe RAG by RAG: Untying
+- **A40465** (AILLM-Safety, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) EquaCode: A Multi-Strate
+- **A40484** (AILLM-Safety, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) SafeNLIDB: A Privacy-Pre
+- **A40498** (Multi-keyword-match, ev:preliminary) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) HEV Generative Sandbox: 
+- **A40534** (Privacy-Protection, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) Privacy-protected Retrie
+- **A40543** (AILLM-Safety, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) WALKSAFE: Risk-aware Gra
+- **A40551** (AILLM-Safety, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) SOM Directions Are Bette
+- **A40553** (AILLM-Safety, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) MirrorShield: Towards Dy
+- **A40554** (AILLM-Safety, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) MAJIC: Markovian Adaptiv
+- **A40570** (Adversarial-ML-Attacks, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) AntiDote: Bi-level Adver
+- **A40584** (Adversarial-ML-Attacks, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) Causal Reward Adjustment
+- **A40607** (AILLM-Safety, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) SafetyReminder: Reviving
+- **A40616** (Multi-keyword-match, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) Incoherence as Oracle-le
+- **A40725** (Multi-keyword-match, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) ShieldRAG: Safeguarding 
+- **A40773** (Privacy-Protection, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) Steering Representations
+- **A40785** (AILLM-Safety, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) Safety Alignment of Larg
+- **A40818** (Privacy-Protection, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) STaR: Sensitive Trajecto
+- **A40824** (Multi-keyword-match, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) ResMAS: Resilience Optim
+- **A40833** (Adversarial-ML-Attacks, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) ExtendAttack: Attacking 
+- **A40836** (AILLM-Safety, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) Response Attack: Exploit
+- **A40839** (Privacy-Protection, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) Your Prompts Are Not Saf
+- **A40840** (AILLM-Safety, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) When Safe Unimodal Input
+- **A40843** (Model-IP-Protection, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) StyleSentinel: Reliable 
+- **A40858** (AILLM-Safety, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) Activation Manipulation 
+- **A40859** (Adversarial-ML-Attacks, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) FILTER: A Framework for 
+- **A40863** (AILLM-Safety, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) Efficient LLM-Jailbreaki
+- **A40866** (AILLM-Safety, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) SceneJailEval: A Scenari
+- **A40870** (Privacy-Protection, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) Cross-Modal Unlearning v
+- **A40874** (Privacy-Protection, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) Mind the Third Eye! Benc
+- **A40878** (Adversarial-ML-Attacks, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) Generic Adversarial Atta
+- **A40881** (Adversarial-ML-Attacks, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) Phantom Menace: Explorin
+- **A40887** (AILLM-Safety, ev:preliminary) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) Dynamic Deep Prompt Opti
+- **A40889** (Privacy-Protection, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) MartDE: A Privacy-Preser
+- **A40891** (Adversarial-ML-Attacks, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) Probing Semantic Insensi
+- **A40893** (Adversarial-ML-Attacks, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) Joint-GCG: Unified Gradi
+- **A40895** (Adversarial-ML-Attacks, ev:strong) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) MCPTox: A Benchmark for 
+- **A40898** (Adversarial-ML-Attacks, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) MPMA: Preference Manipul
+- **A40909** (Model-IP-Protection, ev:strong) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) iSeal: Encrypted Fingerp
+- **A40910** (Model-IP-Protection, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) Bridging the Copyright G
+- **A40913** (Multi-keyword-match, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) The Emotional Baby Is Tr
+- **A40916** (AILLM-Safety, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) MacPrompt: Maraconic-gui
+- **A40919** (AILLM-Safety, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) Reason2Attack: Jailbreak
+- **A40920** (AILLM-Safety, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) T2I-RiskyPrompt: A Bench
+- **A40921** (Model-IP-Protection, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) MSAT-LDM: Toward Transfe
+- **A40925** (Network-Cyber-Security, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) Consensus Learning with 
+- **A41058** (AILLM-Safety, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) MetaCipher: A Time-Persi
+- **A41065** (Network-Cyber-Security, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) Resilience in Ambient Mu
+- **A41074** (AILLM-Safety, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) AlignTree: Efficient Def
+- **A41079** (Multi-keyword-match, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) TAPO: Dynamic Teacher an
+- **A41086** (AILLM-Safety, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) Beautiful Images, Toxic 
+- **A41090** (AILLM-Safety, ev:strong) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) MobileSafetyBench: Evalu
+- **A41093** (AILLM-Safety, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) StyleBreak: Revealing Al
+- **A41098** (Multi-keyword-match, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) How Much Do Large Langua
+- **A41099** (Adversarial-ML-Attacks, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) Semantics-Preserving Adv
+- **A41108** (Adversarial-ML-Attacks, ev:strong) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) STACK: Adversarial Attac
+- **A41119** (AILLM-Safety, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) Beyond I’m Sorry, I Can’
+- **A41120** (Privacy-Protection, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) Towards Benchmarking Pri
+- **A41122** (Adversarial-ML-Attacks, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) Chain-of-Thought Driven 
+- **A41129** (AILLM-Safety, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) EASE: Practical and Effi
+- **A41134** (Defense-Mitigation, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) Shadows in the Code: Exp
+- **A41137** (Multi-keyword-match, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) CluCERT: Certifying LLM 
+- **A41140** (AILLM-Safety, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) HumorReject: Decoupling 
+- **A41141** (Adversarial-ML-Attacks, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) MCA-Bench: A Multimodal 
+- **A41144** (Adversarial-ML-Attacks, ev:strong) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) Multi-Faceted Attack: Ex
+- **A41148** (AILLM-Safety, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) Differentiated Direction
+- **A41152** (AILLM-Safety, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) Value-Aligned Prompt Mod
+- **A41170** (Adversarial-ML-Attacks, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) Fragile by Design: On th
+- **A41250** (Adversarial-ML-Attacks, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) Visual-Friendly Concept 
+- **A41345** (Multi-keyword-match, ev:insufficient) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) Teach AI What It Doesn’t
+- **A41436** (Multi-keyword-match, ev:moderate) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) A Deployed Investigative
+- **A41468** (AILLM-Safety, ev:preliminary) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) InfrastructureSentinel: 
+- **A41498** (AILLM-Safety, ev:preliminary) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) A Guardrail Framework fo
+- **A42176** (Multi-keyword-match, ev:preliminary) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) Optimisation Problems in
+- **A42191** (AILLM-Safety, ev:preliminary) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) Always Refuse: Steering 
+- **A42232** (Privacy-Protection, ev:preliminary) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) zkQML: Verifiable and Pr
+- **A42239** (Network-Cyber-Security, ev:preliminary) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) Obedience or Vigilance? 
+- **A42249** (Network-Cyber-Security, ev:preliminary) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) Towards Capable and Secu
+- **A42273** (AILLM-Safety, ev:preliminary) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) Distractor-Based Jailbre
+- **A42311** (Multi-keyword-match, ev:insufficient) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) Hallucinations at the Fi
+- **A42318** (Network-Cyber-Security, ev:insufficient) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) When AI Meets AI: A Game
+- **A42372** (Privacy-Protection, ev:preliminary) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) AssetOpsBench-Live: Priv
+- **A42453** (Privacy-Protection, ev:strong) — The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26) Realistic Face Reconstru

@@ -1,0 +1,458 @@
+# Source Index — by category
+
+
+## AILLM-Safety (63)
+
+- A36960 [adjacent] — Beyond Content: A Comprehensive Speech Toxicity Dataset and Detection Framework 
+- A36996 [core] — CHASE: Contextual History for Adaptive and Simple Exploitation in Large Language
+- A37106 [core] — Where to Start Alignment? Diffusion Large Language Model May Demand a Distinct P
+- A37192 [peripheral] — Dep-MAP: A Multi-level Alignment Framework with Semantic Prototypes for Video-ba
+- A37203 [core] — Exploiting Synergistic Cognitive Biases to Bypass Safety in LLMs (CognitiveAttac
+- A37350 [core] — EigenShield: Inference-Time, Model-Agnostic Jailbreaking Defense via Causal Subs
+- A37696 [peripheral] — DCA-LUT: Deep Chromatic Alignment with 5D LUT for Purple Fringing Removal
+- A37918 [adjacent] — FedSDA: Federated Stain Distribution Alignment for Non-IID Histopathological Ima
+- A38215 [peripheral] — InfoCLIP: Bridging Vision-Language Pretraining and Open-Vocabulary Semantic Segm
+- A38279 [peripheral] — UniFit: Towards Universal Virtual Try-on with MLLM-Guided Semantic Alignment
+- A38298 [peripheral] — InstructDubber: Instruction-based Alignment for Zero-shot Movie Dubbing
+- A38532 [peripheral] — Knowledge-Enhanced Image Captioning with Adaptive Graph-based Multimodal Alignme
+- A38956 [peripheral] — Collaborative Representation Learning for Alignment of Tactile, Language, and Vi
+- A39003 [peripheral] — MyGram: Modality-aware Graph Transformer with Global Distribution for Multi-moda
+- A39235 [peripheral] — Deep Incomplete Multi-View Clustering via Hierarchical Imputation and Alignment 
+- A39337 [adjacent] — FedTopo: Topology-Informed Representation Alignment in Federated Learning Under 
+- A39475 [peripheral] — Counterfactual-based Cognitive Alignment In-Context Learning for Relation Extrac
+- A39939 [adjacent] — Probability Distribution Alignment and Low-Rank Weight Decomposition for Source-
+- A40018 [core] — TVChain: Leveraging Textual-Visual Prompt Chains for Jailbreaking Large Vision-L
+- A40037 [adjacent] — FedPKDA: Personalized Federated Learning with Privacy-Preserving Knowledge Dynam
+- A40136 [peripheral] — Hierarchical Cross-View Alignment for Multi-View Clustering via Decoupled Inform
+- A40248 [core] — Rethinking Deep Alignment Through the Lens of Incomplete Safety Learning
+- A40296 [core] — When Smiley Turns Hostile: Interpreting How Emojis Trigger LLMs' Toxicity
+- A40399 [core] — EduGuardBench: A Holistic Benchmark for Evaluating the Pedagogical Fidelity and 
+- A40465 [core] — EquaCode: A Multi-Strategy Jailbreak Approach for Large Language Models via Equa
+- A40472 [adjacent] — Hidden in the Noise: Unveiling Backdoors in Audio LLMs Alignment Through Latent 
+- A40484 [core] — SafeNLIDB: A Privacy-Preserving Safety Alignment Framework for LLM-based Natural
+- A40543 [core] — WALKSAFE: Risk-aware Graph Random Walk with Bi-GRPO for LLM Safety
+- A40551 [core] — SOM Directions Are Better than One: Multi-Directional Refusal Suppression in Lan
+- A40553 [core] — MirrorShield: Towards Dynamic Adaptive Defense Against Jailbreaks via Entropy-Gu
+- A40554 [core] — MAJIC: Markovian Adaptive Jailbreaking via Iterative Composition of Diverse Inno
+- A40607 [core] — SafetyReminder: Reviving Delayed Safety Awareness of Vision-Language Models to D
+- A40785 [core] — Safety Alignment of Large Language Models via Contrasting Safe and Harmful Distr
+- A40836 [core] — When Safe Unimodal Inputs Collide: Optimizing Reasoning Chains for Cross-Modal S
+- A40840 [core] — Response Attack: Exploiting Contextual Priming to Jailbreak Large Language Model
+- A40841 [adjacent] — Failures to Surface Harmful Contents in Video Large Language Models
+- A40858 [core] — Activation Manipulation Attack: Penetrating and Harmful Jailbreak Attack against
+- A40863 [core] — Efficient LLM-Jailbreaking via Multimodal-LLM Jailbreak
+- A40866 [core] — SceneJailEval: A Scenario-Adaptive Multi-Dimensional Framework for Jailbreak Eva
+- A40887 [core] — Dynamic Deep Prompt Optimization for Defending Against Jailbreak Attacks on LLMs
+- A40916 [core] — MacPrompt: Macaronic-guided Jailbreak against Text-to-Image Models
+- A40919 [core] — Reason2Attack: Jailbreaking Text-to-Image Models via LLM Reasoning
+- A40920 [core] — T2I-RiskyPrompt: A Benchmark for Safety Evaluation, Attack, and Defense on Text-
+- A40940 [peripheral] — Universal Safety Controllers with Learned Prophecies
+- A41058 [core] — MetaCipher: A Time-Persistent and Universal Multi-Agent Framework for Cipher-Bas
+- A41074 [core] — AlignTree: Efficient Defense Against LLM Jailbreak Attacks
+- A41086 [core] — Beautiful Images, Toxic Words: Understanding and Addressing Offensive Text in Ge
+- A41087 [adjacent] — Cost-Minimized Label-Flipping Poisoning Attack to LLM Alignment
+- A41088 [adjacent] — Dropouts in Confidence: Moral Uncertainty in Human-LLM Alignment
+- A41090 [core] — MobileSafetyBench: Evaluating Safety of Autonomous Agents in Mobile Device Contr
+- A41093 [core] — StyleBreak: Revealing Alignment Vulnerabilities in Large Audio-Language Models v
+- A41118 [adjacent] — AdvBDGen: A Robust Framework for Generating Adaptive and Stealthy Backdoors in L
+- A41119 [core] — Beyond I'm Sorry, I Can't: Dissecting Large-Language-Model Refusal
+- A41129 [core] — EASE: Practical and Efficient Safety Alignment for Small Language Models
+- A41140 [core] — HumorReject: Decoupling LLM Safety from Refusal Prefix via A Little Humor
+- A41148 [core] — Differentiated Directional Intervention: A Framework for Evading LLM Safety Alig
+- A41152 [core] — Value-Aligned Prompt Moderation via Zero-Shot Agentic Rewriting for Safe Image G
+- A41238 [adjacent] — Adversarial Generation and Collaborative Evolution of Safety-Critical Scenarios 
+- A41468 [core] — InfrastructureSentinel: Policy Enforced Guardrails for Secure MCP-driven Infrast
+- A41498 [core] — A Guardrail Framework for Sensitive Financial Information Protection: A Taxonomy
+- A41517 [peripheral] — Beyond Prompting: AI Safety Education in the Generative AI Era
+- A42191 [core] — Always Refuse: Steering LLMs Against Jailbreaks with Contrastive Activations (St
+- A42273 [core] — Distractor-Based Jailbreaking Attacks in Language Models and Associated Changes 
+
+## Adversarial-ML-Attacks (152)
+
+- A36961 [adjacent] — Modulation-Based Backdoors: Leveraging Amplitude and Frequency Patterns to Attac
+- A36964 [adjacent] — Transferable Backdoor Attacks for Code Models via Sharpness-Aware Adversarial Pe
+- A36999 [adjacent] — Transferable Hypergraph Attack via Injecting Nodes into Pivotal Hyperedges (TH-A
+- A37010 [adjacent] — Uncovering and Mitigating Destructive Multi-Embedding Attacks in Deepfake Proact
+- A37015 [adjacent] — Stochastic Universal Adversarial Perturbations with Fixed Optimization Constrain
+- A37082 [core] — CP-FREEZER: Latency Attacks Against Vehicular Cooperative Perception
+- A37116 [adjacent] — An LLM-based Quantitative Framework for Evaluating High-Stealthy Backdoor Risks 
+- A37117 [core] — Authority Backdoor: A Certifiable Backdoor Mechanism for Authoring DNNs
+- A37118 [core] — HogVul: Black-box Adversarial Code Generation Framework Against LM-based Vulnera
+- A37119 [adjacent] — Poisoned Distillation: Injecting Backdoors into Distilled Datasets Without Raw D
+- A37140 [adjacent] — IO-RAE: Information-Obfuscation Reversible Adversarial Example for Audio Privacy
+- A37141 [adjacent] — DIFT: Protecting Contrastive Learning Against Data Poisoning Backdoor Attacks
+- A37272 [peripheral] — UniABG: Unified Adversarial View Bridging and Graph Correspondence for Unsupervi
+- A37318 [peripheral] — Phased One-Step Adversarial Equilibrium for Video Diffusion Models (V-PAE)
+- A37349 [adjacent] — Clean-Label Physical Backdoor Attacks with Data Distillation (CLPBA)
+- A37388 [adjacent] — Unveiling the Fragility of Vision-Language Models: Multi-Modal Adversarial Syner
+- A37389 [core] — Disentangling Adversarial Prompts: A Semantic-Graph Defense for Robust LLM Secur
+- A37396 [adjacent] — Stabilizing Cross-Modal Bidirectional Attribution: Few-Shot Adversarial Prompt T
+- A37420 [adjacent] — Transferability of Adversarial Attacks in Video-based MLLMs: A Cross-modal Image
+- A37426 [core] — ROVER: Robust Generative Continual Identity Unlearning Against Relearning Attack
+- A37436 [adjacent] — Text-Guided Gradient Refinement: Resolving Multimodal Gradient Conflicts to Boos
+- A37442 [core] — LAMP: Learning Universal Adversarial Perturbations for Multi-Image Tasks via Pre
+- A37474 [core] — False Positives Matter: Multidimensional Localization Evaluation and Training-Fr
+- A37479 [adjacent] — Timestep-Compressed Attack on Spiking Neural Networks Through Timestep-Level Bac
+- A37488 [peripheral] — Toward the Frontiers of Reliable Diffusion Sampling via Adversarial Sinkhorn Att
+- A37615 [adjacent] — OTI: A Model-Free and Visually Interpretable Measure of Image Attackability
+- A37647 [core] — Spatial-Spectral Homogeneous Attacks on Physical-World Large Vision-Language Mod
+- A37651 [adjacent] — Rethinking Target Label Conditioning in Adversarial Attacks: A 2D Tensor-Guided 
+- A37664 [adjacent] — Improving Sustainability of Adversarial Examples in Class-Incremental Learning
+- A37695 [adjacent] — From Pretrain to Pain: Adversarial Vulnerability of Video Foundation Models With
+- A37716 [adjacent] — CertMask: Certifiable Defense Against Adversarial Patches via Theoretically Opti
+- A37770 [adjacent] — LoReTTA: A Low Resource Framework to Poison Continuous Time Dynamic Graphs
+- A37792 [adjacent] — Fractured Glass, Failing Cameras: Simulating Physics-Based Adversarial Samples f
+- A37903 [adjacent] — Less Is More: Sparse and Cooperative Perturbation for Point Cloud Attacks
+- A37912 [adjacent] — Prompting Adversarial Transferability via Path Flatness Attack
+- A37955 [adjacent] — Invisible Triggers, Visible Threats! Road-Style Adversarial Creation Attack for 
+- A37967 [adjacent] — Adversarial Fair Incomplete Multi-View Clustering
+- A38013 [adjacent] — Beyond Single-Point Perturbation: A Hierarchical, Manifold-Aware Approach to Dif
+- A38015 [core] — MTAttack: Multi-Target Backdoor Attacks Against Large Vision-Language Models
+- A38056 [adjacent] — FRBAT: Conditionally-Visible Physical Backdoor Attack via Fluorescence
+- A38095 [adjacent] — MAGIC: Mastering Physical Adversarial Generation in Context through Collaborativ
+- A38121 [adjacent] — SRD: Reinforcement-Learned Semantic Perturbation for Backdoor Defense in VLMs
+- A38127 [adjacent] — Improving the Convergence Rate of Ray Search Optimization for Query-Efficient Ha
+- A38134 [adjacent] — Dual-View Inference Attack: Machine Unlearning Amplifies Privacy Exposure
+- A38137 [adjacent] — Diff-NAT: Better Naturalistic and Aggressive Adversarial Attacks via Class-Optim
+- A38320 [adjacent] — Cheating Stereo Matching in Full-Scale: Physical Adversarial Attack Against Bino
+- A38325 [adjacent] — ObjectAdv: Object-Level Unrestricted Adversarial Attacks via Diffusion Models
+- A38328 [adjacent] — Good Gradients Poison Your Model: Evading Defenses in Federated Learning via Bou
+- A38340 [adjacent] — Manipulating the Mind's Eye: A-SAGE, the Attention-Based Attack on ViT Explainab
+- A38345 [adjacent] — Universal Adversarial Purification with DDIM Metric Loss for Stable Diffusion
+- A38392 [adjacent] — Debiased Dual-Invariant Defense for Adversarially Robust Person Re-Identificatio
+- A38416 [adjacent] — Tuning for Two Adversaries: Enhancing the Robustness Against Transfer and Query-
+- A38422 [adjacent] — Boosting Adversarial Transferability via Ensemble Non-Attention
+- A38469 [peripheral] — VBF++: Variational Bayesian Fusion with Context-Aware Priors and Recommendation-
+- A38489 [peripheral] — Multi-granularity Intent Modeling with Adversarial Robustness for Sequential Rec
+- A38515 [peripheral] — SSCL: Adversarially Guided Image Compression via Semantic and Spectral Consisten
+- A38576 [adjacent] — Privacy Auditing of Multi-Domain Graph Pre-Trained Model Under Membership Infere
+- A38659 [adjacent] — DRFGD: Disentangled Representation-Focused Generative Defense for Attack-Toleran
+- A38722 [core] — Optimally Auditing Adversarial Agents
+- A38730 [peripheral] — Optimal Welfare in Noncooperative Network Formation Under Attack
+- A38761 [core] — Security Games with Layered Defenses: Adaptive Adversaries and Gittins Indices
+- A38785 [core] — Hide and Seek with LLMs: An Adversarial Game for Sneaky Error Generation and Sel
+- A38853 [adjacent] — Reconstruction Attack-Resistant Inference Paradigm for LLM Cloud Services
+- A38949 [adjacent] — Keep on Going: Learning Robust Humanoid Motion Skills via Selective Adversarial 
+- A39085 [adjacent] — Edge Self-Adversarial Augmentation Enhances Graph Contrastive Learning Against N
+- A39276 [adjacent] — Rethinking Membership Inference Attacks for CLIP
+- A39290 [adjacent] — Poisoning with A Pill: Circumventing Detection in Federated Learning
+- A39301 [adjacent] — On Robustness of Linear Classifiers to Targeted Data Poisoning
+- A39318 [adjacent] — Deferred Poisoning: Making the Model More Vulnerable via Hessian Singularization
+- A39336 [adjacent] — Look Closer! An Adversarial Parametric Editing Framework for Hallucination Mitig
+- A39382 [adjacent] — PrAda-GAN: A Private Adaptive Generative Adversarial Network with Bayes Network 
+- A39428 [adjacent] — Exploiting Missing Data Remediation Strategies Using Adversarial Missingness Att
+- A39438 [core] — Adversarial Perturbation Shield: Preventing Concept Bleed-through in Continual L
+- A39449 [adjacent] — Membership Inference Attack Against Large Language Model-Based Recommendation Sy
+- A39480 [adjacent] — Dormant Backdoor: Weaponizing Model Finetuning for Feasible Backdoor Attacks aga
+- A39500 [adjacent] — FedAU2: Attribute Unlearning for User-Level Federated Recommender Systems with A
+- A39560 [adjacent] — High Dimensional Distributed Gradient Descent with Arbitrary Number of Byzantine
+- A39577 [adjacent] — Beyond Immediate Activation: Temporally Decoupled Backdoor Attacks on Time Serie
+- A39593 [adjacent] — Towards Effective, Stealthy, and Persistent Backdoor Attacks Targeting Graph Fou
+- A39603 [adjacent] — TIMA: Text-Image Mutual Awareness for Balancing Zero-Shot Adversarial Robustness
+- A39604 [core] — GraphTextAck: A Realistic Black-Box Node Injection Attack on LLM-Enhanced GNNs
+- A39668 [adjacent] — Surrogate as Teacher: Distillation-Guided Graph Poisoning Attack
+- A39725 [adjacent] — Retaliatory Attacks Against Federated Unlearning via Data Leakage
+- A39747 [adjacent] — Injection, Attack and Erasure: Revocable Backdoor Attacks via Machine Unlearning
+- A39752 [adjacent] — Privacy on the Fly: A Predictive Adversarial Transformation Network for Mobile S
+- A39778 [adjacent] — DoBlock: Blocking Malicious Association Propagation for Backdoor-Robust Federate
+- A39803 [core] — Guided Perturbation Sensitivity (GPS): Detecting Adversarial Text via Embedding 
+- A39809 [adjacent] — Beyond Training-time Poisoning: Component-level and Post-training Backdoors in D
+- A39935 [adjacent] — Breaking the Stealth-Potency Trade-off in Clean-Image Backdoors with Generative 
+- A39954 [adjacent] — AT-Field: Rethinking the Games in Adversarial Training
+- A39997 [adjacent] — Yours or Mine? Overwriting Attacks Against Neural Audio Watermarking
+- A40051 [adjacent] — MULTIKD: Backdoor Defense in Federated Graph Learning via Attention-Guided Multi
+- A40054 [adjacent] — Vulnerability-Aware Robust Multimodal Adversarial Training (VARMAT)
+- A40176 [core] — Adversarial Attack on Black-Box Multi-Agent by Adaptive Perturbation
+- A40224 [core] — Attack the Messages, Not the Agents: A Multi-round Adaptive Stealthy Tampering F
+- A40272 [adjacent] — AUVIC: Adversarial Unlearning of Visual Concepts for Multi-modal Large Language 
+- A40295 [core] — Persistent Backdoor Attacks under Continual Fine-Tuning of LLMs
+- A40301 [adjacent] — Breaking the Adversarial Robustness-Performance Trade-off in Text Classification
+- A40353 [core] — Fact2Fiction: Targeted Poisoning Attack to Agentic Fact-checking System
+- A40366 [adjacent] — DUP: Detection-guided Unlearning for Backdoor Purification in Language Models
+- A40409 [adjacent] — Backdooring Rationalization
+- A40445 [peripheral] — LoopLLM: Transferable Energy-Latency Attacks in LLMs via Repetitive Generation
+- A40447 [adjacent] — Anti-adversarial Learning: Desensitizing Prompts for Large Language Models
+- A40486 [adjacent] — BadThink: Triggered Overthinking Attacks on Chain-of-Thought Reasoning in Large 
+- A40570 [core] — AntiDote: Bi-level Adversarial Training for Tamper-Resistant LLMs
+- A40584 [core] — Causal Reward Adjustment: Mitigating Reward Hacking in External Reasoning via Ba
+- A40587 [adjacent] — Optimization and Robustness-Informed Membership Inference Attacks for LLMs
+- A40726 [adjacent] — MrM: Black-Box Membership Inference Attacks Against Multimodal RAG Systems
+- A40787 [adjacent] — ShadeEdit: A Utility-Preserving and Defense-Evasive Knowledge Manipulation Attac
+- A40833 [core] — ExtendAttack: Attacking Servers of LRMs via Extending Reasoning
+- A40842 [adjacent] — MOBA: A Material-Oriented Backdoor Attack Against LiDAR-Based 3D Object Detectio
+- A40846 [adjacent] — Reference Recommendation Based Membership Inference Attack Against Hybrid-Based 
+- A40849 [adjacent] — Time Shuffle: A Transferability-Booster for Multiple Audio Adversarial Tasks
+- A40854 [adjacent] — RSA-CR: Resisting Shilling Attacks in Citation Recommendation via Dumbbell Induc
+- A40855 [adjacent] — 6DAttack: Backdoor Attacks in the 6DoF Pose Estimation
+- A40859 [core] — FILTER: A Framework for Defending against Backdoor Attacks in Vertical Federated
+- A40867 [adjacent] — PurMM: Attention-Guided Test-Time Backdoor Purification in Multimodal Large Lang
+- A40876 [adjacent] — Eguard: Defending LLM Embeddings Against Inversion Attacks via Text Mutual Infor
+- A40877 [adjacent] — GeoShield: Safeguarding Geolocation Privacy from Vision-Language Models via Adve
+- A40878 [core] — Generic Adversarial Attack Framework Against Graph-based Vertical Federated Lear
+- A40881 [core] — Phantom Menace: Exploring and Enhancing the Robustness of VLA Models Against Phy
+- A40891 [core] — Probing Semantic Insensitivity for Inference-Time Backdoor Defense in Multimodal
+- A40893 [core] — Joint-GCG: Unified Gradient-Based Poisoning Attacks on Retrieval-Augmented Gener
+- A40894 [adjacent] — Enhancing All-to-X Backdoor Attacks with Optimized Target Class Mapping
+- A40895 [core] — MCPTox: A Benchmark for Tool Poisoning Attack on Real-World MCP Servers
+- A40897 [adjacent] — ConfGuard: A Simple and Effective Backdoor Detection for Large Language Models
+- A40898 [core] — MPMA: Preference Manipulation Attack Against Model Context Protocol
+- A40902 [adjacent] — BeDKD: Backdoor Defense Based on Directional Mapping Module and Adversarial Know
+- A40904 [adjacent] — CL-Guard: Defending DNNs Against Backdoors via Fine-Grained Neuron Analysis and 
+- A40905 [adjacent] — Class-feature Watermark: A Resilient Black-box Watermark Against Model Extractio
+- A40908 [adjacent] — HealSplit: Towards Self-Healing through Adversarial Distillation in Split Federa
+- A40912 [adjacent] — Privacy Leaks by Adversaries: Adversarial Iterations for Membership Inference At
+- A40915 [adjacent] — Hashed Watermark as a Filter: A Unified Defense Against Forging and Overwriting 
+- A40964 [adjacent] — Dominance Pruning and Heuristics in Optimal Adversarial Non-Deterministic Planni
+- A41080 [adjacent] — Uncovering and Aligning Anomalous Attention Heads to Defend Against NLP Backdoor
+- A41099 [core] — Semantics-Preserving Adversarial Attacks on Event-Driven Stock Prediction Models
+- A41108 [core] — STACK: Adversarial Attacks on LLM Safeguard Pipelines
+- A41121 [adjacent] — Backdoor Attacks on Open Vocabulary Object Detectors via Multi-Modal Prompt Tuni
+- A41122 [core] — Chain-of-Thought Driven Adversarial Scenario Extrapolation for Robust Language M
+- A41141 [core] — MCA-Bench: A Multimodal Benchmark for Evaluating CAPTCHA Robustness Against VLM-
+- A41144 [core] — Multi-Faceted Attack: Exposing Cross-Model Vulnerabilities in Defense-Equipped V
+- A41146 [peripheral] — Fading the Digital Ink: A Universal Black-Box Attack Framework for 3DGS Watermar
+- A41164 [adjacent] — On the Feasibility of Using MultiModal LLMs to Execute AR Social Engineering Att
+- A41170 [core] — Fragile by Design: On the Limits of Adversarial Defenses in Personalized DreamBo
+- A41213 [adjacent] — ALERT: Adversarial Learning Enhanced Stability-aware Routing Transformer for Ada
+- A41250 [core] — Visual-Friendly Concept Protection via Selective Adversarial Perturbations
+- A41404 [adjacent] — Artificial Immune System of Secure Face Recognition Against Adversarial Attacks 
+- A42145 [adjacent] — Reinforcement Learning for Falsifying Autonomous Driving Systems (Doctoral Conso
+- A42217 [adjacent] — Feature Compression May Be the Root Cause of Adversarial Fragility in Neural Net
+- A42292 [adjacent] — ResNet-GA: Evolutionary Deep Learning Models for Adversarial Defense (Student Ab
+- A42327 [adjacent] — Breaking Cross-View Associations: Byzantine Model Poisoning Attack against Verti
+- A42439 [adjacent] — PhysPatch: A Physically Realizable and Transferable Adversarial Patch Attack for
+
+## Deepfake-Forgery-Detection (13)
+
+- A37071 [adjacent] — Dual-Branch Asymmetric Discrepancy Learning Based on Fake Image Pattern-Coexiste
+- A37334 [adjacent] — Improving Deepfake Detection with Reinforcement Learning-Based Adaptive Data Aug
+- A37421 [adjacent] — MIRAGE: Towards AI-Generated Image Detection in the Wild
+- A37473 [adjacent] — ResProto-FD: Visual-Language Residual Prototype Sets for Generalized Face Forger
+- A37553 [adjacent] — Decision-Driven Orthogonal Learning with Complementary Feature Mining for Robust
+- A37865 [adjacent] — Creating Blank Canvas Against AI-enabled Image Forgery
+- A37945 [core] — FaceShield: Explainable Face Anti-Spoofing with Multimodal Large Language Models
+- A38060 [adjacent] — Explainable Synthetic Image Detection Through Diffusion Timestep Ensembling
+- A40886 [adjacent] — Beyond Binary Classification: A Semi-supervised Approach to Generalized AI-gener
+- A40907 [adjacent] — Detect All-Type Deepfake Audio: Wavelet Prompt Tuning for Enhanced Auditory Perc
+- A40928 [adjacent] — DeformTrace: A Deformable State Space Model with Relay Tokens for Temporal Forge
+- A41234 [adjacent] — RealNet: Efficient and Unsupervised Detection of AI-Generated Images via Real-On
+- A41525 [adjacent] — Breakable Machine: A K–12 Classroom Game for Transformative AI Literacy Through 
+
+## Defense-Mitigation (9)
+
+- A37002 [adjacent] — VoiceCloak: A Multi-Dimensional Defense Framework Against Unauthorized Diffusion
+- A37924 [core] — Certified but Fooled! Breaking Certified Defences with Ghost Certificates
+- A39732 [adjacent] — Towards Robust Text-Attributed Federated Graph Learning: Multimodal Threats and 
+- A39818 [core] — TowerMind: A Tower Defence Game Learning Environment and Benchmark for LLM as Ag
+- A40129 [adjacent] — Perturbing to Preserve: Defending Fragile Knowledge in Online Continual Learning
+- A40432 [core] — RAGFort: Dual-Path Defense Against Proprietary Knowledge Base Extraction in Retr
+- A41134 [core] — Shadows in the Code: Exploring the Risks and Defenses of LLM-based Multi-Agent S
+- A41145 [adjacent] — CoSPED: Consistent Soft Prompt Targeted Data Extraction and Defense
+- A42364 [adjacent] — GNN-AID: Graph Neural Network Analysis, Interpretation and Defense
+
+## Model-IP-Protection (22)
+
+- A37038 [adjacent] — Uncovering Pretraining Code in LLMs: A Syntax-Aware Attribution Approach (SynPru
+- A37103 [adjacent] — Sim-to-Real (S2R): An Unsupervised Noise Layer for Screen-Camera Watermarking Ro
+- A37412 [adjacent] — GenPTW: Latent Image Watermarking for Provenance Tracing and Tamper Localization
+- A37429 [adjacent] — Can Protective Watermarking Safeguard the Copyright of 3D Gaussian Splatting?
+- A38094 [adjacent] — OptMark: Robust Multi-bit Diffusion Watermarking via Inference Time Optimization
+- A39041 [adjacent] — Removing Box-Free Watermarks for Image-to-Image Models via Query-Based Reverse E
+- A39199 [core] — Robust Watermarking on Gradient Boosting Decision Trees
+- A39623 [adjacent] — Exact Shapley Attributions in Quadratic-time for FANOVA Gaussian Processes
+- A39992 [adjacent] — DeepTracer: Tracing Stolen Model via Deep Coupled Watermarks
+- A40030 [adjacent] — VeriFlow: Modeling Distributions for Neural Network Verification
+- A40546 [adjacent] — WaterMod: Modular Token-Rank Partitioning for Probability-Balanced LLM Watermark
+- A40561 [adjacent] — Anchor Watermark: Robust Attribution for Diffusion-based Text-to-Audio Model
+- A40575 [adjacent] — Perturb Your Data: Paraphrase-Guided Training Data Watermarking (SPECTRA)
+- A40728 [adjacent] — RegionMarker: A Region-Triggered Semantic Watermarking Framework for Embedding-a
+- A40843 [core] — StyleSentinel: Reliable Artistic Copyright Verification via Stylistic Fingerprin
+- A40851 [adjacent] — One for All: Synthesis-Free Fingerprint Learning for Attribution of In-the-Wild 
+- A40892 [adjacent] — RAIN: Redundancy-Aware Latent Injection for Quality-Preserving Image Watermarkin
+- A40901 [adjacent] — ARIW-Framework: Adaptive Robust Iterative Watermarking Framework
+- A40909 [core] — iSeal: Encrypted Fingerprinting for Reliable LLM Ownership Verification
+- A40910 [core] — Bridging the Copyright Gap: Do Large Vision-Language Models Recognize and Respec
+- A40921 [core] — MSAT-LDM: Toward Transferable High-Fidelity Watermarking for Latent Diffusion Mo
+- A41092 [adjacent] — ARGH-Mark: Anchor-Synchronized Watermarking with Hamming Correction for Robust a
+
+## Multi-keyword-match (69)
+
+- A36972 [adjacent] — SIDE: Surrogate Conditional Data Extraction from Diffusion Models
+- A36989 [core] — Unveiling the Attribute Misbinding Threat in Identity-Preserving Models
+- A36993 [core] — Failure Localization in Multi-Agent Code Generation via Knowledge-Guided and Tra
+- A36994 [core] — GARNET: GoT-Based Alert Reduction and Narrative Event Tracing
+- A36995 [adjacent] — From Passive Perception to Active Memory: A Weakly Supervised Image Manipulation
+- A37005 [core] — Towards Distance-Invariant Radio Frequency Fingerprinting via Augmented Unsuperv
+- A37023 [adjacent] — Drifting Away from Truth: GenAI-Driven News Diversity Challenges LVLM-Based Misi
+- A37327 [adjacent] — RFNNS: Robust Fixed Neural Network Steganography with Universal Text-to-Image Mo
+- A37345 [adjacent] — CLIP-FTI: Fine-Grained Face Template Inversion via CLIP-Driven Attribute Conditi
+- A37434 [adjacent] — 3D-ANC: Adaptive Neural Collapse for Robust 3D Point Cloud Recognition
+- A37452 [adjacent] — Diversifying Counterattacks: Orthogonal Exploration for Robust CLIP Inference
+- A37507 [core] — Targeted Data Protection for Diffusion Model by Matching Training Trajectory
+- A38085 [adjacent] — Unnoticed Yet Effective: A Hybrid Physical Camouflage Framework Against DNNs and
+- A38124 [adjacent] — FedARKS: Federated Aggregation via Robust and Discriminative Knowledge Selection
+- A38163 [adjacent] — RobusTor3D: Robust Multimodal 3D Object Detector for Autonomous Driving by Visio
+- A38268 [core] — AuthSig: Safeguarding Scanned Signatures Against Unauthorized Reuse in Paperless
+- A38470 [peripheral] — Learning to Compress Graphs via Dual Agents for Consistent Topological Robustnes
+- A38526 [peripheral] — MovSemCL: Movement-Semantics Contrastive Learning for Trajectory Similarity
+- A38544 [peripheral] — Capturing Dynamic User Interests Under Modality Imbalance for Multimodal Sequent
+- A38606 [adjacent] — Potent but Stealthy: Rethink Profile Pollution Against Sequential Recommendation
+- A38653 [peripheral] — NumCoKE: Ordinal-Aware Numerical Reasoning over Knowledge Graphs with Mixture-of
+- A38870 [peripheral] — CAT-Net: A Cross-Attention Tone Network for Cross-Subject EEG-EMG Fusion Tone De
+- A39184 [adjacent] — LSHFed: Robust and Communication-Efficient Federated Learning with Locally-Sensi
+- A39192 [adjacent] — TabGeoFlow: A Geometric Flow Matching Model for Tabular Data Synthesis
+- A39335 [adjacent] — Hyper-Opinion Vagueness Quantification for Robust Multimodal Learning (HOVQ)
+- A39342 [peripheral] — Enhancing Diffusion Policies with Distribution-Matching Generator in Offline Rei
+- A39344 [core] — Robust Decentralized Multi-armed Bandits: From Corruption-Resilience to Byzantin
+- A39363 [adjacent] — Is the Information Bottleneck Robust Enough? Towards Label-Noise Resistant Infor
+- A39451 [adjacent] — DeloopSGNN: Revisiting Spectral GNNs Through the Lens of Spatial Aggregation
+- A39546 [adjacent] — Personalized Federated Graph-Level Clustering Network (PERFECT)
+- A39573 [adjacent] — DA-DFGAS: Differentiable Federated Graph Neural Architecture Search with Distrib
+- A39617 [peripheral] — BrainCKT: Make Model Transparent — Brain Network Analysis via Causal and Knowled
+- A39670 [adjacent] — ReBoot: Encrypted Training of Deep Neural Networks with CKKS Bootstrapping
+- A39812 [adjacent] — DAWN: Distributed LLM Multi-Agent Workflow Synthesis via Federated Graph Learnin
+- A39833 [adjacent] — Boosting the Robustness-Accuracy Trade-off of SNNs by Robust Temporal Self-Ensem
+- A39856 [adjacent] — Towards Nonlinear Sparse AUC Maximization via Compositional Stochastic Hard Thre
+- A40004 [adjacent] — An Invariant Latent Space Perspective on Language Model Inversion
+- A40118 [adjacent] — DGTF: Cross-Domain Decentralized Graph Learning with Topology-Aware Knowledge Fu
+- A40188 [peripheral] — Orion: Steering Personalized Web Agents via Global-Micro Profiling and Adaptive 
+- A40189 [core] — Tapas Are Free! Training-Free Adaptation of Programmatic Agents via LLM-Guided P
+- A40231 [core] — MPAS: Breaking Sequential Constraints of Multi-Agent Communication Topologies vi
+- A40269 [core] — Can Editing LLMs Inject Harm?
+- A40297 [adjacent] — HLPD: Aligning LLMs to Human Language Preference for Machine-Revised Text Detect
+- A40370 [peripheral] — Iterative Multi-Granular RAG with Contextual Hierarchical Graph (MGranRAG)
+- A40433 [core] — Do Not Merge My Model! Safeguarding Open-Source LLMs Against Unauthorized Model 
+- A40462 [core] — Safe RAG by RAG: Untying the Bell That RAG Rang with the RAG Hand (RAG2RAG)
+- A40498 [core] — HEV Generative Sandbox: A Framework for Assessing Domain-Specific Social Risks T
+- A40501 [peripheral] — Schema-Guided Event Reasoning: A Plug-and-Play Event Reasoning Framework Based o
+- A40590 [peripheral] — Beyond Plain Demos: A Demo-centric Anchoring Paradigm for In-Context Learning in
+- A40593 [adjacent] — Enhancing Pre-training Data Detection in LLMs Through Discriminative and Symmetr
+- A40616 [core] — Incoherence as Oracle-less Measure of Error in LLM-Based Code Generation
+- A40725 [core] — ShieldRAG: Safeguarding Retrieval-Augmented Generation from Untrusted Knowledge 
+- A40824 [core] — ResMAS: Resilience Optimization in LLM-based Multi-agent Systems
+- A40872 [adjacent] — Model-Agnostic Sentiment Distribution Stability Analysis for Robust LLM-Generate
+- A40913 [core] — The Emotional Baby Is Truly Deadly: Does Your Multimodal Large Reasoning Model H
+- A40924 [peripheral] — Rep Deep & Machine Learning: Exemplar-Free Continual Video Action Recognition vi
+- A41079 [core] — TAPO: Dynamic Teacher and Perturbed Answer Injection for Policy Optimization
+- A41098 [core] — How Much Do Large Language Models Cheat On Evaluation? Benchmarking Overestimati
+- A41137 [core] — CluCERT: Certifying LLM Robustness via Clustering-Guided Denoising Smoothing
+- A41180 [adjacent] — Characterizing AI Manipulation Risks in Brazilian YouTube Climate Discourse
+- A41227 [peripheral] — Generalizable Slum Detection from Satellite Imagery with Mixture-of-Experts
+- A41230 [adjacent] — Enhancing Predictive Model Learning via Domain-Knowledge Augmented Latent Featur
+- A41345 [core] — Teach AI What It Doesn't Know
+- A41436 [core] — A Deployed Investigative AI Search Engine for Combating Human Trafficking at Web
+- A42176 [core] — Optimisation Problems in Constrained Machine Learning
+- A42179 [peripheral] — LaFINet: Laplacian-Based Frequency Injection Network for Camouflage Object Detec
+- A42311 [core] — Hallucinations at the Firewall
+- A42429 [adjacent] — Multimodal Robust Prompt Distillation for 3D Point Cloud Models (MRPD)
+- A42488 [peripheral] — DLDA: Unified Dual-Level Domain Adaptation for Low-Light Object Detection
+
+## Network-Cyber-Security (31)
+
+- A36959 [adjacent] — AutoMalDesc: Large-Scale Script Analysis for Cyber Threat Research
+- A36976 [adjacent] — VFCionX: Bridging Large and Small Models for Robust Vulnerability-Fixing Commit 
+- A37021 [adjacent] — BugSweeper: Function-Level Detection of Smart Contract Vulnerabilities Using Gra
+- A37053 [adjacent] — DRMD: Deep Reinforcement Learning for Malware Detection Under Concept Drift
+- A37087 [adjacent] — CTX-Coder: Cross-Attention Architectures Empower LLMs for Long-Context Vulnerabi
+- A37125 [adjacent] — Towards Provably Secure and Highly Robust Generative Image Steganography Leverag
+- A37144 [peripheral] — Tree-Based Stochastic Optimization for Solving Large-Scale Urban Network Securit
+- A37475 [adjacent] — Angular Gradient Sign Method: Uncovering Vulnerabilities in Hyperbolic Networks
+- A37756 [core] — QRShield: Exploiting Vulnerabilities of Latent Diffusion Models for Preventing A
+- A37844 [core] — TarPro: Targeted Protection Against Malicious Image Editing
+- A38538 [adjacent] — Exploring Domain Generalization and Subpopulation Shift for Generalizable Graph-
+- A38541 [core] — DGP: A Dual-Granularity Prompting Framework for Fraud Detection with Graph-Enhan
+- A38588 [adjacent] — Targeting Borderline Fraudsters: Multi-View Hypergraph Fraud Detection with LLM-
+- A38682 [adjacent] — TriFusion-IDS: A Multimodal Graph-Tabular-Text Contrastive Framework for Cross-D
+- A39096 [adjacent] — Towards Multiple Missing Values-resistant Unsupervised Graph Anomaly Detection
+- A39721 [adjacent] — SecMoE: Communication-Efficient Secure MoE Inference via Select-Then-Compute
+- A39770 [adjacent] — State-Derivative-Aware Neural Controlled Differential Equations for Multivariate
+- A40100 [adjacent] — FedSEA-LLaMA: A Secure, Efficient and Adaptive Federated Splitting Framework for
+- A40210 [core] — Towards Effective Offensive Security LLM Agents: Hyperparameter Tuning, LLM as a
+- A40815 [adjacent] — HyperGLLM: An Efficient Framework for Endpoint Threat Detection via Hypergraph-E
+- A40903 [adjacent] — A Content-Preserving Secure Linguistic Steganography
+- A40925 [core] — Consensus Learning with Multi-Party Perturbation Triggers for Secure Model Acces
+- A41065 [core] — Resilience in Ambient Multi-Agent LLMs via Decentralized Bio-Autonomic Control a
+- A41178 [peripheral] — GraphVSSM: Graph Variational State-Space Model for Probabilistic Spatiotemporal 
+- A41464 [adjacent] — AquaSentinel: Next-Generation AI System Integrating Sensor Networks for Urban Un
+- A42153 [adjacent] — Time-Series Anomaly Detection with Graph-Based Self-Supervised Learning and Foun
+- A42239 [core] — Obedience or Vigilance? How Large Language Models React to Malicious Multiple-Ch
+- A42249 [core] — Towards Capable and Secure Autonomous Computer-Use Agents
+- A42318 [core] — When AI Meets AI: A Game-Theoretic Defense Framework Against AI-Empowered Cyber 
+- A42369 [adjacent] — VulnBench: A Comprehensive Benchmark for Transformer-Based Vulnerability Detecti
+- A42470 [adjacent] — Attention to Threat-Relevant Objects: Reasoning Detection in Autonomous Driving 
+
+## Privacy-Protection (73)
+
+- A37135 [core] — PriAgent: A Collaborative Multi-Agent Framework for Auditing Android Privacy Com
+- A37244 [peripheral] — FastDriveVLA: Efficient End-to-End Driving via Plug-and-Play Reconstruction-base
+- A37284 [adjacent] — StegaVAR: Privacy-Preserving Video Action Recognition via Steganographic Domain 
+- A37472 [peripheral] — EVOKE: Efficient and High-Fidelity EEG-to-Video Reconstruction via Decoupling Im
+- A37499 [adjacent] — Easy to Learn, Yet Hard to Forget: Towards Robust Unlearning Under Bias (CUPID)
+- A37551 [peripheral] — TubeRMC: Tube-conditioned Reconstruction with Mutual Constraints for Weakly-supe
+- A37735 [adjacent] — Copyright Infringement Detection in Text-to-Image Diffusion Models via Different
+- A37743 [peripheral] — Enhanced Privacy Leakage from Noise-Perturbed Gradients via Gradient-Guided Cond
+- A37748 [peripheral] — Image Content Matters: An Image Content Aware State Space Model for Accelerated 
+- A37854 [adjacent] — DP-GenG: Differentially Private Dataset Distillation Guided by DP-Generated Data
+- A37930 [adjacent] — AEDR: Training-Free AI-Generated Image Attribution via Autoencoder Double-Recons
+- A37979 [peripheral] — Slender3D: Curve-Guided Multi-View Reconstruction of Slender Structures
+- A38004 [peripheral] — MCGS: Markov Chain Gaussian Splatting for Dynamic Scenes Reconstruction
+- A38016 [adjacent] — RPGen: Robust and Differentially Private Synthetic Image Generation
+- A38021 [peripheral] — Towards Privacy-Protected Generalized Gaze Estimation Using Diffusion Models and
+- A38130 [peripheral] — TSPE-GS: Probabilistic Depth Extraction for Semi-Transparent Surface Reconstruct
+- A38196 [adjacent] — PeriUn: Enhancing Unlearning by Selectively Forgetting Peripheral Samples
+- A38297 [peripheral] — M3SR: Multi-Scale Multi-Perceptual Mamba for Efficient Spectral Reconstruction
+- A38773 [adjacent] — Truth, Justice, and Secrecy: Cake Cutting Under Privacy Constraints
+- A39038 [adjacent] — PAGE: A Unified Approach for Federated Graph Unlearning
+- A39051 [adjacent] — Differentially Private Linear Programming: Reduced Sub-Optimality and Guaranteed
+- A39210 [adjacent] — FedSkeleton: Secure Multi-Party Graph Skeleton Construction for Privacy-Preservi
+- A39212 [adjacent] — InfoDecom: Decomposing Information for Defending Against Privacy Leakage in Spli
+- A39307 [adjacent] — FedAI: Federated Graph-level Clustering Network with Attribute Inference
+- A39311 [adjacent] — Towards Federated Clustering: A Client-wise Private Graph Aggregation Framework 
+- A39333 [peripheral] — Venom: Liquid Diffusion-Guided Gradient Inversion for Breaking Differential Priv
+- A39338 [adjacent] — FedLAGC: Towards High Performance System-Heterogeneous Federated Learning via La
+- A39373 [core] — An Information Theoretic Evaluation Metric for Strong Unlearning
+- A39381 [adjacent] — PAGPL: Privacy-Aware Graph Prompt Learning Scheme via Adaptive Perturbation-Esti
+- A39431 [adjacent] — DIET: Machine Unlearning on a Data-Diet
+- A39496 [core] — LLA: Enhancing Security and Privacy for Generative Models with Logic-Locked Acce
+- A39502 [adjacent] — ReLUPruner: Rethinking ReLU Importance with Taylor Expansion for Efficient Priva
+- A39510 [adjacent] — An Improved Privacy and Utility Analysis of Differentially Private SGD with Boun
+- A39524 [adjacent] — FedDNA: DNA Sequence Reconstruction via Deep Evidential Learning and Personalize
+- A39582 [adjacent] — Topological Federated Clustering via Gravitational Potential Fields Under Local 
+- A39671 [adjacent] — On Stealing Graph Neural Network Models
+- A39681 [adjacent] — Beyond Binary Erasure: Soft-Weighted Unlearning for Fairness and Robustness
+- A39710 [adjacent] — DP-NCB: Privacy Preserving Fair Bandits
+- A39750 [adjacent] — Synthetic Forgetting Without Access: A Few-shot Zero-glance Framework for Machin
+- A39895 [adjacent] — FedShard: Federated Unlearning with Efficiency Fairness and Performance Fairness
+- A39911 [core] — REMISVFU: Vertical Federated Unlearning via Representation Misdirection for Inte
+- A39975 [adjacent] — Source-Free Graph Foundation Model Adaptation via Pseudo-Source Reconstruction (
+- A40033 [adjacent] — PCFormer: Accelerating Privacy-preserving Transformer Inference by Partition and
+- A40041 [adjacent] — PRISM: Privacy-Aware Routing for Adaptive Cloud–Edge LLM Inference via Semantic 
+- A40045 [core] — Oblivionis: A Lightweight Learning and Unlearning Framework for Federated Large 
+- A40047 [adjacent] — Imprint of the Forgotten: Stealthy Membership Inference In Unlearned Graph Neura
+- A40117 [adjacent] — Differentially Private Subspace Fine-Tuning for Large Language Models (DP-SFT)
+- A40132 [adjacent] — Scalable Privacy-Preserving Neural Network Training over Z2k via RMFE-Based Pack
+- A40206 [core] — Equilibrium-Driven Vertical Federated Learning with Selective Privacy Protection
+- A40343 [core] — Beyond Superficial Forgetting: Thorough Unlearning Through Knowledge Density Est
+- A40398 [core] — Large Language Model Unlearning for Source Code (PROD)
+- A40534 [core] — Privacy-protected Retrieval-Augmented Generation for Knowledge Graph Question An
+- A40720 [adjacent] — PrivSV: Differentially Private Steering Vector for Large Language Models
+- A40773 [core] — Steering Representations, Safeguarding Privacy: A Cross-Modal Privacy Protection
+- A40818 [core] — STaR: Sensitive Trajectory Regulation for Unlearning in Large Reasoning Models
+- A40838 [adjacent] — Privacy Preserving In-Context-Learning Framework for Large Language Models
+- A40839 [core] — Your Prompts Are Not Safe: Output-Free Membership Inference via Prompt Vectors i
+- A40852 [adjacent] — Efficient, Secure, Differentially Private Deep Learning in the Two-Server Model
+- A40862 [adjacent] — Private Frequency Estimation Via Residue Number Systems
+- A40868 [adjacent] — DySy-Det: A Synergistic Framework with Dynamic Reconstruction-Path Consistency f
+- A40870 [core] — Cross-Modal Unlearning via Influential Neuron Path Editing in Multimodal Large L
+- A40874 [core] — Mind the Third Eye! Benchmarking Privacy Awareness in MLLM-powered Smartphone Ag
+- A40889 [core] — MartDE: A Privacy-Preserving and Cost-Efficient Evaluation Framework for Data Ma
+- A40896 [adjacent] — GUIC: Certified Graph Unlearning with Individual Fairness Guarantees
+- A40911 [adjacent] — When Privacy Meets Recovery: The Overlooked Half of Surrogate-Driven Privacy Pre
+- A41120 [core] — Towards Benchmarking Privacy Vulnerabilities in Selective Forgetting with Large 
+- A42113 [adjacent] — Speaker Anonymization for Children's Oral Reading Assessment
+- A42140 [adjacent] — Conceptualisation and Implementation of Human-centric Privacy Preserving Framewo
+- A42151 [adjacent] — Exploring the Janus Face of Synthetic Images: From Privacy-secure Biometrics to 
+- A42229 [adjacent] — Privacy-Preserving Argumentative Explanations (Student Abstract)
+- A42232 [core] — zkQML: Verifiable and Privacy-Preserving Inference for Quantum Machine Learning 
+- A42372 [core] — AssetOpsBench-Live: Privacy-Aware Online Evaluation of Multi-Agent Performance i
+- A42453 [core] — Realistic Face Reconstruction from Facial Embeddings via Diffusion Models
