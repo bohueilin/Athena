@@ -10,6 +10,23 @@ Append-only record of corpus builds/updates, and the procedure to add new papers
 - Gates: `tests/validate.py` all-pass. Fixes: removed 1 hallucinated citation (`A38449`); titles rebuilt from card H1 (manifest first-page text carried AAAI boilerplate).
 - Stable ids: `A<article-id>` (the AAAI OJS article number, e.g. `A40895`). These are permanent — never renumber.
 
+### 2026-07-15 — FAR AI ingest (+15 papers → 447 total)
+- Source: `corpus/far-ai/` (FAR AI frontier-lab safety) — 15 PDFs. Ingested as a **new `FAR-AI` category**
+  (thematically distinct: adversarial robustness of superhuman/Go AIs, LLM persuasion & misuse, sandbagging &
+  auditing games, agentic-AI security, reasoning obfuscation vs monitoring) rather than scattering into the 8
+  AAAI categories — so no re-run of the AAAI syntheses.
+- Stable ids: `FAR01`–`FAR15` (sorted order of `corpus/far-ai/*.pdf`; permanent). Venue `FAR AI`.
+- Produced: 15 research cards (`research-cards/FAR-AI/`), 15 ontology tags, **1 new synthesis** (`syntheses/FAR-AI.md`),
+  and 2 **cross-source addenda** appended to `cross-cutting/{ai-llm-safety,adversarial-ml}.md` (strengthen/add/contradict
+  reconciliation) — the AAAI syntheses/chapters were otherwise left intact.
+- **Dedup:** `FAR04` (STACK: Adversarial Attacks on LLM Safeguard Pipelines) is the same paper as AAAI `A41108` —
+  cross-referenced in the card; both retained.
+- Re-ran `build_manifest.py` (447, 0 dup, 0 unreadable, 0 missing cards) → `assemble_ontology.py` (447 tags, graph
+  cross-links FAR↔AAAI by shared tokens) → `validate.py` (all gates; syntheses gate 8→9; card-coverage now validates
+  against the multi-source manifest so it stays machine-independent).
+- **Not yet ingested:** none outstanding in `corpus/`. (Virtue AI seed papers remain covered by the original
+  `references/papers.md`, separate from the 447.)
+
 ## Incremental-update procedure (adding new papers)
 
 Stable ids + content hashes make updates cheap. To add or refresh papers:

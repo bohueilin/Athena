@@ -8,10 +8,10 @@ from collections import defaultdict, Counter
 CORP = (os.environ.get("ATHENA_CORPUS") or os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "..", "corpus", "aaai-security-2026")))
 REF = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "references"))
 CARDS = os.path.join(REF, "research-cards")
-EXPECTED = {  # from the user's spec
+EXPECTED = {  # AAAI-26 (from the user's spec) + FAR AI (ingested 2026-07-14)
     "AILLM-Safety": 63, "Adversarial-ML-Attacks": 152, "Privacy-Protection": 73,
     "Multi-keyword-match": 69, "Network-Cyber-Security": 31, "Model-IP-Protection": 22,
-    "Deepfake-Forgery-Detection": 13, "Defense-Mitigation": 9,
+    "Deepfake-Forgery-Detection": 13, "Defense-Mitigation": 9, "FAR-AI": 15,
 }
 ARXIV = re.compile(r"arXiv:\s*(\d{4}\.\d{4,5})(v\d+)?", re.I)
 DOI = re.compile(r"\b(10\.\d{4,9}/[-._;()/:A-Z0-9]+)\b", re.I)
@@ -46,23 +46,31 @@ def first_text(path, n=2):
 def main():
     rows, exceptions, by_hash = [], [], defaultdict(list)
     cat_counts = Counter()
-    pdfs = []
+    pdfs = []  # (category, file_name, path, paper_id, relative_path, venue)
     for cat in sorted(os.listdir(CORP)):
         d = os.path.join(CORP, cat)
         if not os.path.isdir(d):
             continue
         for fn in sorted(os.listdir(d)):
             if fn.lower().endswith(".pdf"):
-                pdfs.append((cat, fn, os.path.join(d, fn)))
+                pid = "A" + fn.split("_")[0]
+                pdfs.append((cat, fn, os.path.join(d, fn), pid, f"{cat}/{fn}", "AAAI-26"))
+    # Extra source: FAR AI (frontier-lab safety) — flat dir, stable ids FAR01.. by sorted order,
+    # single category "FAR-AI". Optional (skipped if the symlink/dir is absent, e.g. a fresh clone).
+    FAR = os.path.normpath(os.path.join(os.path.dirname(CORP), "far-ai"))
+    if os.path.isdir(FAR):
+        far_files = sorted(f for f in os.listdir(FAR) if f.lower().endswith(".pdf"))
+        for idx, fn in enumerate(far_files, 1):
+            pid = f"FAR{idx:02d}"
+            pdfs.append(("FAR-AI", fn, os.path.join(FAR, fn), pid, f"far-ai/{fn}", "FAR AI"))
     print(f"scanning {len(pdfs)} pdfs...")
-    for i, (cat, fn, path) in enumerate(pdfs):
-        pid = "A" + fn.split("_")[0]
+    for i, (cat, fn, path, pid, rel_path, venue) in enumerate(pdfs):
         rec = {
-            "paper_id": pid, "file_name": fn, "relative_path": f"{cat}/{fn}",
+            "paper_id": pid, "file_name": fn, "relative_path": rel_path,
             "category": cat, "file_type": "pdf",
             "file_size": os.path.getsize(path), "content_hash": None,
             "canonical_title": None, "authors": None, "year": 2026,
-            "venue": "AAAI-26", "doi": None, "arxiv_id": None, "source_url": None,
+            "venue": venue, "doi": None, "arxiv_id": None, "source_url": None,
             "abstract_available": None, "full_text_available": None, "page_count": None,
             "extraction_status": "ok", "extraction_quality": "high",
             "duplicate_group": None, "supersedes_or_superseded_by": None,
@@ -132,14 +140,14 @@ def main():
 
     missing_cards = [r["paper_id"] for r in rows if r["processing_status"] == "card-missing"]
     with open(os.path.join(REF, "corpus-audit.md"), "w") as f:
-        f.write("# Corpus Audit — AAAI-26 Security Corpus\n\n")
-        f.write(f"Total PDFs discovered: **{len(rows)}** (expected 432)\n\n")
+        f.write("# Corpus Audit — AAAI-26 Security Corpus + FAR AI\n\n")
+        f.write(f"Total PDFs discovered: **{len(rows)}** (expected {sum(EXPECTED.values())})\n\n")
         f.write("## Category reconciliation (observed vs expected)\n\n")
         f.write("| Category | Observed | Expected | Delta |\n|---|--:|--:|--:|\n")
         for cat in sorted(EXPECTED):
             obs = cat_counts.get(cat, 0)
             f.write(f"| {cat} | {obs} | {EXPECTED[cat]} | {obs-EXPECTED[cat]:+d} |\n")
-        f.write(f"| **Total** | **{sum(cat_counts.values())}** | **432** | **{sum(cat_counts.values())-432:+d}** |\n\n")
+        f.write(f"| **Total** | **{sum(cat_counts.values())}** | **{sum(EXPECTED.values())}** | **{sum(cat_counts.values())-sum(EXPECTED.values()):+d}** |\n\n")
         f.write("## Integrity\n\n")
         f.write(f"- Exact-duplicate content hashes: **{len(dupes)}** group(s)")
         f.write((" — " + "; ".join(f"{','.join(v)}" for v in list(dupes.values())[:10])) if dupes else " (none)")

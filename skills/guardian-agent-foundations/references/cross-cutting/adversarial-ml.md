@@ -497,3 +497,179 @@ value was absent, this chapter does not assert one. Cross-paper judgments are ma
 synthesis)*; all other claims trace to the cited paper id under its own evaluated threat model. This
 chapter draws only on `references/syntheses/Adversarial-ML-Attacks.md`; claims requiring the primary
 PDFs (e.g. exact table cells) are **[R] production-/source-validation-pending**.
+
+---
+
+## FAR AI cross-source addendum (2026-07-14 ingest)
+
+*Scope: this section reconciles four FAR.AI research cards — FAR13, FAR01, FAR11, FAR04 —
+against claims already argued above. It is **append-only**; nothing above is edited. FAR04 is
+the **same work** as A41108 (STACK), read here from the full arXiv v3 PDF rather than the AAAI
+extraction, so it functions as a source-corroboration pass on the STACK numbers this chapter
+already carries. Evidence-integrity contract from lines 10–24 applies unchanged: every value is
+**author-reported under that paper's own evaluated threat model**; **(direct)** = a finding of the
+cited paper, **(reviewer synthesis)** = a cross-paper judgment; where a card records a value as
+absent it is written **"not stated in paper"**; no titles, authors, venues, datasets, or numbers
+are invented. Cross-domain agreement below is corroboration, **not** transfer of numbers.*
+
+### A. Robustness scaling trends — FAR13 → Threads 6, 7, 8, 9
+
+FAR13 studies appended-suffix attacks (GCG white-box; BEAST, RandomToken black-box) and GCG-based
+adversarial training on finetuned Pythia (≤11.6B) and Qwen2.5 (≤14B) classifiers, plus initial
+StrongREJECT generative results. It maps onto four threads:
+
+- **Strengthens Thread 6 (adaptive attackers) and Thread 8's proven-tradeoff framing.** FAR13
+  reports the **offense-defense slopes are all < 1** — when attacker and defender both double
+  compute, attack success rate rises — so at any fixed model size **attack outpaces defense**
+  (direct). This is the same "static/lower-compute evaluation overstates security" meta-finding the
+  chapter tags [R] on nearly every thread (lines 47–50, Thread 6 lines 270–300), now shown as a
+  smooth compute-scaling law rather than a per-defense anecdote. FAR13's adversarial training is
+  itself **adaptive** (GCG re-optimized against each checkpoint), so it meets — from the LLM side —
+  the A40905/A40915/A37117 "purpose-built adaptive attacker" bar the chapter sets in Thread 6
+  (lines 287–292) (direct).
+- **Adds a calibrating counter-angle to the "defense-aware ⇒ defense fails" reading.** The chapter's
+  strongest formulation is "wherever the attacker is allowed to be defense-aware, the defense
+  degrades or fails" (lines 48–50). FAR13 shows the more nuanced picture: adaptive-aware adversarial
+  training drove **ASR from above 90% to below 20% after 5 rounds, and below a 5% threshold with
+  additional rounds** against the *tested* attacks (direct) — a materially effective defense, not a
+  collapse — **while still** being out-scaled by attacker compute (slope < 1) and defeated by OOD
+  shift (below). Reconciliation (reviewer synthesis): "defense-aware ⇒ fails" holds against a
+  *re-optimizing* or *OOD* adversary and at *fixed* scale; it does **not** mean adversarial training
+  is worthless within its trained attack family. This narrows, without contradicting, the chapter's
+  pessimism.
+- **Adds a counter-data-point to Thread 8's "robustness routinely costs clean utility" (lines
+  357–388).** FAR13 reports **clean (non-attacked) validation performance stays constant or improves
+  during adversarial training** (direct) — i.e., in this classifier/suffix-attack scope the
+  robustness gain did **not** cost clean accuracy. This aligns with the A39603 (TIMA)
+  joint-improvement pole rather than the A38416 dichotomy pole, and should be read as narrowing the
+  blanket "routinely costs utility" generalization to specific defenses, not overturning A38416's
+  *proven* transfer-vs-query dichotomy, which FAR13 does not touch (reviewer synthesis).
+- **Strengthens Thread 9 (distribution shift).** No model reliably transferred its defense to a
+  **fully out-of-distribution prefix attack**; larger models transferred to an infix variant better
+  than small ones but none closed the prefix gap (direct). This is the same "defense validated on
+  one distribution fails under shift" pattern as A36964/A39480, now on the *attack-placement* axis.
+- **New angle for Thread 7 (certified vs empirical).** FAR13's design implication is that robustness
+  should be specified as a **compute-parameterized property (ASR at a stated attacker budget), not a
+  binary robust/not-robust claim** (direct) — a concrete operationalization of the chapter's
+  "state the assumption next to every number" stance (lines 351–355). **[C]/[R]**
+- **Bounded projection — do not upgrade to a guarantee.** FAR13's fifth result, that *scale may favor
+  defense in the long run*, is an **extrapolation beyond the evaluated range** (Pythia ≤11.6B,
+  Qwen2.5 ≤14B) and is flagged by the authors and the card as a projection requiring frontier-scale
+  validation, **not** a demonstrated result (direct + reviewer synthesis). It does not soften the
+  Thread 6 launch gate. FAR13 also confirms **larger model size alone does not reliably confer
+  robustness** for non-safety-trained classifiers (the generative monotonic-robustness trend is
+  attributed to safety training, not raw scale) — reinforcing that scale is not a substitute for a
+  defense (direct). Boundary: FAR13 does **not** evaluate indirect prompt injection, tool/agent
+  misuse, poisoning, or many-shot jailbreaks (reviewer synthesis), so it does not extend to the
+  agentic threads.
+
+### B. Adversarial policies vs superhuman Go AIs — FAR11, FAR01 → Threads 4, 6, monitoring
+
+These two Go/KataGo papers (gray-box, adaptive, inference-time exploitation of self-play-trained RL
+agents) are **cross-domain corroboration** of the chapter's central "capability is not permission;
+obscurity is not robustness" axis (lines 29–30, Thread 6). Numbers are Go-specific and must not be
+ported; the *methodology and robustness gap* are what transfer.
+
+- **Strengthens the Thread 6 launch gate "0% against a known attack is misleading without an
+  adaptive re-attack" (lines 104–106, 312–313).** FAR01 gives an exact instance: a positional-
+  adversarially-trained victim beat the **fixed** original cyclic attack **0%**, yet **adaptive
+  fine-tuning of that same adversary recovered a 92% win rate using ~8% of the defense's compute**
+  (direct). A non-cyclic **gift-adversary won 91% at 512 victim visits with ~6% of victim compute**
+  (direct). This is the same failure shape as the chapter's guard-stack collapse, from RL rather
+  than LLMs.
+- **Strengthens FAR11 as the existence-proof root.** FAR11 (ICML 2023 per its card) is the origin
+  result the chapter's thesis rests on: **superhuman average-case capability did not confer
+  worst-case robustness** — a pass-adversary won **99.9% vs no-search KataGo at 0.13% of its training
+  budget**, a cyclic-adversary won **up to 100% vs the defended `Latest_def`** and **72% even at 10^7
+  visits/move**, all while **losing to human amateurs** (non-transitivity — exploitation, not
+  capability) (direct). Small adversarial training defended a fixed adversary but **did not
+  generalize and was re-broken by fine-tuning** (e.g., a 47% win rate recovered vs an adversarially
+  trained 60-block net at 4096 visits) (direct) — matching "adversarial-training defenses must be
+  treated as ongoing" (lines 108–109).
+- **Adds a cross-domain angle to Thread 4 (architecture monoculture is not a fix).** FAR01 shows the
+  cyclic vulnerability is **not caused by the CNN backbone**: a ViT-backbone victim at 65,536 visits
+  still **lost 78% of games**, and even lost **2.5% to zero-shot transfer of the original attack**
+  (direct). The blind spot lived in the learned representation, not the architecture — the RL analog
+  of Thread 4's "ensembling heterogeneous architectures does not by itself confer transfer
+  robustness" (A38422, lines 208–210) and "swapping the backbone is not a robustness fix."
+- **Strengthens the "model self-assessment is [C], not [V]/[E]" theme (A38340/A38853).** FAR11 reports
+  the victim's **value head predicted >99% win confidence until roughly one move before catastrophe**
+  — self-confidence is not a failure signal (direct). It further finds **layer-26 channel activation
+  divergence** separated cyclic from benign positions, suggesting internal-state monitoring may beat
+  output-confidence monitoring — but the card labels this an **analysis result, not a deployed
+  detector** (direct), so it is a hypothesis, not a control.
+- **Corroborates the offense-defense imbalance quantitatively.** FAR01 reports attackers succeeding
+  with **5–8% of the victim's compute** and iterated defense costing **~18× the attack**; FAR11
+  reports adversaries at **0.13%–14% of victim training compute** (direct). Same directional finding
+  as FAR13's slope < 1, from an independent domain (reviewer synthesis).
+- **Calibration — neither paper is an impossibility proof.** Both explicitly state defenses made
+  attacks *harder but not impossible* and do **not** prove no training-time defense can work; they
+  leave larger attack corpora, more sample-efficient / latent adversarial training, and population-
+  based methods as untested routes (direct). This matches the chapter's Thread 7 "empirical
+  risk-reduction, not proof" standard (lines 346–355) and is consistent with FAR13's finding that
+  adversarial training *does* reduce ASR within scope. Boundary: FAR01/FAR11 are **single-domain
+  (Go), gray-box, adaptive**; FAR01's venue is **not stated in paper** (arXiv preprint per its card)
+  — do not infer its peer-review status, and do not port win-rate numbers to LLM/agent/robotics
+  settings (reviewer synthesis).
+
+### C. STACK on LLM safeguard pipelines — FAR04 (= A41108) → Threads 4, 6, cross-thread, launch gates
+
+FAR04 is the **same paper as A41108**, already cited in Thread 4 (lines 199, 214, 217), Thread 6
+(lines 277–279, 308), the cross-thread reading (lines 454–456), and launch-gate item 1 (line 468).
+Read from the full arXiv v3 PDF (Algorithm 1, Sections 5–6), it **corroborates and refines** those
+citations rather than adding a new claim — directly relevant because this chapter's closing note
+flags that "several headline numbers sit in table regions the synthesis marked truncated" (lines
+493–495).
+
+- **Source-corroborates the STACK numbers the chapter carries.** FAR04's full-PDF read confirms
+  **71% black-box front-to-back ASR on ClearHarm** against a strong few-shot-prompted (Gemma2)
+  pipeline **where PAP alone achieves 0% ASR**, and **33% transfer ASR** under inseparable black-box
+  access — matching the chapter's "0% → 71% black-box (33% transfer)" (line 278) (author claim).
+  These now trace to a full-PDF source, reducing (not eliminating) the truncation caveat for this
+  one paper (reviewer synthesis).
+- **Refines the threat model behind the number.** The 71% is achieved under a **Black
+  Semi-separable** model — the attacker sees only a boolean per-component block signal — and under
+  **defender-favorable constraints**: safeguards **smaller than the guarded model** and an
+  "impractically high" **15% benign refusal-rate** calibration (direct). This sharpens the chapter's
+  "apparent robustness is illusory against staged attacks" claim: it held even with the deck stacked
+  for the defender.
+- **Gives the precise mechanism for the chapter's "verbatim-echo channel" (lines 308, 455).** STACK
+  (Algorithm 1) finds a universal input-classifier jailbreak `j_q`, a per-datapoint generative-model
+  jailbreak `q_m` (via PAP), and a universal output-classifier jailbreak `j_r`, then concatenates
+  **`q_jail = j_q ‖ p_repeat(j_r) ‖ q_m`** — one query that induces the guarded model to *emit the
+  output-classifier jailbreak string verbatim*, defeating input and output filters together (direct).
+  This is the concrete instantiation of the chapter's [V] implication "break the specific
+  verbatim-echo channel that smuggles strings past output classifiers."
+- **Substantiates Thread 4's "shared base between guard and guarded model is a weakness" (line 199).**
+  FAR04 notes the best-performing **Gemma2 few-shot classifier shares its base (gemma-2-9b) with
+  ShieldGemma**, and that **transfer STACK depends on the target sharing a lineage with an available
+  proxy** (direct) — the mechanism behind the chapter's "guard should not share a base with the
+  guarded model" [P] gate (line 217).
+- **Adds monitoring/launch-gate angles not in the original citation.** Front-to-back STACK cost
+  **507 H100 GPU-hours** and transfer STACK **15 H100 GPU-hours**, with transfer needing only **~40
+  PAP queries at inference** — i.e., **low-query and harder to catch by volume-based monitoring**
+  (direct), sharpening Thread 6's telemetry gate toward signature/behavioral detection over rate
+  limiting. FAR04's recommendation to **hide which component blocked** (uniform refusals; run all
+  stages even after an early flag) names **Opus 4's explicit block disclosure and GPT-5's inferable
+  side-channel** as concrete deployment weaknesses (author claim) — a [P] refinement to the
+  cross-source-verification gate.
+- **Adds honest bounds (new angle, not a contradiction).** Greedy per-component optimization causes
+  **component interference** — STACK's best ASR *lags PAP's* on the undefended model because the OCJ
+  degrades on-topic helpfulness (direct); and the authors **could not transfer a prefix
+  output-classifier jailbreak**, so **transfer STACK is ineffective against streaming output
+  classifiers** (direct). Frontier-model (Opus 4 / GPT-5) vulnerabilities via component-wise attacks
+  are reported in Appendix K but their ASRs are **not stated in the main-text paper** (author claim).
+  Boundary: absolute ASRs are on Qwen3-14B + open-weight guards standing in for proprietary
+  pipelines and must not be read as production-defense measurements (reviewer synthesis).
+
+### Net reconciliation (reviewer synthesis)
+
+The FAR cards **strengthen** the chapter's core axis — capability/scale is not robustness, and
+adaptive/OOD evaluation is where defenses give way — with independent evidence from **RL/Go
+(FAR11/FAR01)** and **LLM classifiers (FAR13)**, and **source-corroborate** the STACK pipeline
+result (FAR04 = A41108). The one **new angle** worth carrying forward is calibrative, not
+contradictory: adaptive-aware adversarial training (FAR13) and iterated defenses (FAR01) **do**
+reduce ASR against their trained attack family and can preserve clean accuracy (FAR13) — so the
+correct reading of "defense-aware ⇒ defense fails" is scoped to a *re-optimizing or OOD* adversary
+at *fixed* scale, and every FAR paper still leaves residual risk **[R] unknown** outside that scope
+and explicitly disclaims any impossibility or guarantee.

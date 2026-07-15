@@ -1,6 +1,6 @@
 # Normalized Research Ontology
 
-Derived from **432** tagged papers (one normalized tag record per paper in `paper-to-ontology-map.jsonl`). Machine-readable vocab + frequencies in `ontology.json`; queryable graph in `research-relationship-graph.json`.
+Derived from **447** tagged papers (one normalized tag record per paper in `paper-to-ontology-map.jsonl`). Machine-readable vocab + frequencies in `ontology.json`; queryable graph in `research-relationship-graph.json`.
 
 > Frequency = how many papers touch a token. It reflects **corpus coverage, not evidence weight** — weight is judged in the syntheses by reproducibility, threat-model realism, and replication.
 
@@ -8,89 +8,89 @@ Derived from **432** tagged papers (one normalized tag record per paper in `pape
 
 | strength | papers |
 |---|--:|
-| moderate | 312 |
-| insufficient | 65 |
-| preliminary | 38 |
-| strong | 17 |
+| moderate | 318 |
+| insufficient | 66 |
+| preliminary | 39 |
+| strong | 24 |
 
 ## Top assets (of 15 distinct)
 
 | token | papers |
 |---|--:|
-| `model_outputs` | 275 |
-| `model_weights` | 163 |
-| `training_data` | 143 |
-| `user_data` | 112 |
-| `safety_policies` | 90 |
-| `prompts_context` | 67 |
+| `model_outputs` | 290 |
+| `model_weights` | 170 |
+| `training_data` | 148 |
+| `user_data` | 114 |
+| `safety_policies` | 104 |
+| `prompts_context` | 72 |
+| `embeddings` | 57 |
 | `ip` | 57 |
-| `embeddings` | 54 |
-| `identity_authz` | 49 |
-| `execution_env` | 30 |
-| `retrieval_corpus` | 23 |
-| `eval_artifacts` | 22 |
-| `audit_records` | 21 |
-| `agent_memory` | 19 |
-| `tool_credentials` | 7 |
+| `identity_authz` | 50 |
+| `execution_env` | 31 |
+| `eval_artifacts` | 28 |
+| `retrieval_corpus` | 24 |
+| `audit_records` | 22 |
+| `agent_memory` | 20 |
+| `tool_credentials` | 8 |
 
 ## Top adversaries (of 12 distinct)
 
 | token | papers |
 |---|--:|
-| `external_attacker` | 255 |
-| `malicious_user` | 136 |
-| `insider` | 62 |
-| `supply_chain` | 43 |
-| `compromised_data_source` | 42 |
+| `external_attacker` | 265 |
+| `malicious_user` | 143 |
+| `insider` | 65 |
+| `supply_chain` | 45 |
+| `compromised_data_source` | 44 |
 | `model_extractor` | 39 |
-| `malicious_model_provider` | 34 |
+| `malicious_model_provider` | 36 |
 | `physical_world` | 32 |
-| `malicious_app_dev` | 24 |
-| `adaptive_evaluator_aware` | 23 |
-| `coordinating_agents` | 22 |
-| `compromised_tool` | 9 |
+| `adaptive_evaluator_aware` | 30 |
+| `malicious_app_dev` | 27 |
+| `coordinating_agents` | 23 |
+| `compromised_tool` | 10 |
 
 ## Top surfaces (of 21 distinct)
 
 | token | papers |
 |---|--:|
-| `model_serving` | 250 |
-| `training_pipeline` | 125 |
-| `api_boundary` | 110 |
-| `prompt_context` | 88 |
-| `model_distribution` | 80 |
-| `fine_tuning` | 71 |
+| `model_serving` | 262 |
+| `training_pipeline` | 130 |
+| `api_boundary` | 116 |
+| `prompt_context` | 97 |
+| `model_distribution` | 81 |
+| `fine_tuning` | 80 |
 | `physical_sensors` | 48 |
+| `post_training` | 44 |
 | `network` | 38 |
-| `post_training` | 36 |
+| `agent_to_agent` | 31 |
 | `data_storage` | 29 |
-| `agent_to_agent` | 28 |
-| `embeddings` | 24 |
-| `rag_ingestion` | 22 |
-| `tool_invocation` | 16 |
-| `retrieval` | 15 |
-| `human_approval` | 15 |
-| `identity_authz` | 15 |
-| `logging_telemetry` | 12 |
+| `embeddings` | 25 |
+| `rag_ingestion` | 23 |
+| `human_approval` | 18 |
+| `tool_invocation` | 17 |
+| `retrieval` | 16 |
+| `identity_authz` | 16 |
+| `logging_telemetry` | 13 |
 
 ## Top attacks (of 33 distinct)
 
 | token | papers |
 |---|--:|
-| `evasion` | 133 |
-| `privacy_leakage` | 81 |
-| `adversarial_example` | 76 |
-| `data_poisoning` | 68 |
-| `jailbreak` | 55 |
-| `prompt_injection` | 49 |
+| `evasion` | 141 |
+| `privacy_leakage` | 82 |
+| `adversarial_example` | 80 |
+| `data_poisoning` | 72 |
+| `jailbreak` | 63 |
+| `prompt_injection` | 51 |
+| `backdoor` | 48 |
 | `membership_inference` | 47 |
-| `backdoor` | 45 |
 | `forgery` | 27 |
 | `attribute_inference` | 25 |
 | `model_inversion` | 23 |
 | `training_data_reconstruction` | 21 |
 | `watermark_removal` | 21 |
-| `unauthorized_adaptation` | 19 |
+| `unauthorized_adaptation` | 21 |
 | `model_extraction` | 17 |
 | `deepfake` | 17 |
 | `provenance_manipulation` | 15 |
@@ -100,41 +100,41 @@ Derived from **432** tagged papers (one normalized tag record per paper in `pape
 
 | token | papers |
 |---|--:|
-| `detection` | 159 |
-| `robust_optimization` | 94 |
-| `runtime_monitoring` | 64 |
-| `input_filtering` | 54 |
-| `adversarial_training` | 46 |
-| `data_validation` | 33 |
+| `detection` | 167 |
+| `robust_optimization` | 100 |
+| `runtime_monitoring` | 70 |
+| `input_filtering` | 56 |
+| `adversarial_training` | 51 |
+| `red_teaming` | 36 |
+| `data_validation` | 35 |
+| `evidence_logging` | 29 |
+| `output_filtering` | 28 |
 | `differential_privacy` | 28 |
-| `evidence_logging` | 28 |
 | `watermarking` | 28 |
-| `output_filtering` | 25 |
-| `red_teaming` | 23 |
-| `policy_gating` | 22 |
+| `policy_gating` | 26 |
+| `rollback` | 22 |
+| `incident_containment` | 22 |
 | `federated_learning` | 21 |
-| `rollback` | 21 |
-| `incident_containment` | 20 |
-| `human_approval` | 17 |
-| `authentication` | 15 |
+| `human_approval` | 20 |
+| `authentication` | 16 |
 | `rate_limiting` | 14 |
 
 ## Top evidence mechanisms (of 16 distinct)
 
 | token | papers |
 |---|--:|
-| `holdout` | 296 |
-| `adversarial_eval` | 270 |
+| `holdout` | 300 |
+| `adversarial_eval` | 284 |
 | `statistical_guarantee` | 67 |
-| `reproducible_traces` | 47 |
-| `human_review` | 42 |
+| `reproducible_traces` | 56 |
+| `human_review` | 48 |
+| `adaptive_attack_testing` | 37 |
 | `formal_verification` | 33 |
-| `adaptive_attack_testing` | 28 |
 | `continuous_monitoring` | 5 |
+| `residual_risk_acceptance` | 4 |
 | `independent_audit` | 3 |
 | `integration_tests` | 2 |
 | `tamper_evident_logs` | 2 |
-| `residual_risk_acceptance` | 2 |
 | `red_teaming` | 1 |
 | `evidence_logging` | 1 |
 | `canary` | 1 |
@@ -150,4 +150,4 @@ Derived from **432** tagged papers (one normalized tag record per paper in `pape
 
 ## Provenance & integrity
 
-- Tag lines parsed: **432** / 432. Malformed lines: **0** (none).
+- Tag lines parsed: **447** / 432. Malformed lines: **0** (none).

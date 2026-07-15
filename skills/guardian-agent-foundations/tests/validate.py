@@ -16,12 +16,10 @@ def check(name, ok, detail=""):
 
 
 cards = {os.path.basename(f)[:-3] for f in glob.glob(os.path.join(REF, "research-cards", "*", "*.md"))}
-_pdfs = glob.glob(os.path.join(CORP, "*", "*.pdf"))
-if _pdfs:
-    pdf_ids = {"A" + os.path.basename(p).split("_")[0] for p in _pdfs}
-else:  # no local corpus (e.g. a fresh clone) — validate against the committed manifest
-    pdf_ids = {json.loads(l)["paper_id"] for l in open(os.path.join(REF, "corpus-manifest.jsonl"))}
-check("card coverage == corpus", cards == pdf_ids, f"cards={len(cards)} pdfs={len(pdf_ids)} missing={len(pdf_ids-cards)}")
+# The committed manifest is the authoritative multi-source inventory (AAAI-26 + FAR AI); validate
+# cards against it (machine-independent — works with or without the local PDFs).
+pdf_ids = {json.loads(l)["paper_id"] for l in open(os.path.join(REF, "corpus-manifest.jsonl"))}
+check("card coverage == manifest", cards == pdf_ids, f"cards={len(cards)} manifest={len(pdf_ids)} missing={len(pdf_ids-cards)} extra={len(cards-pdf_ids)}")
 
 deliverables = (glob.glob(os.path.join(REF, "syntheses", "*.md")) +
                 glob.glob(os.path.join(REF, "cross-cutting", "*.md")) +
@@ -43,7 +41,7 @@ else:
     check("ontology map present", False, "paper-to-ontology-map.jsonl missing")
 
 SKIP = {"INDEX.md", "README.md"}
-for d, n in [("syntheses/*.md", 8), ("cross-cutting/*.md", 8), ("patterns/*.md", 28)]:
+for d, n in [("syntheses/*.md", 9), ("cross-cutting/*.md", 8), ("patterns/*.md", 28)]:
     got = len([x for x in glob.glob(os.path.join(REF, d))
                if "_partials" not in x and os.path.basename(x) not in SKIP])
     check(f"{d} count == {n}", got == n, f"got {got}")

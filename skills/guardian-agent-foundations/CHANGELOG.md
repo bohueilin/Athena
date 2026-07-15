@@ -1,5 +1,12 @@
 # Changelog — guardian-agent-foundations
 
+## 2026-07-15 — FAR AI ingest (v2.1)
+Added the **FAR AI** frontier-lab safety corpus (15 papers) as a new `FAR-AI` category → **447 papers total**.
+New: 15 research cards, `syntheses/FAR-AI.md`, and cross-source addenda in the `ai-llm-safety` + `adversarial-ml`
+chapters; ontology + relationship graph rebuilt over 447 tags (FAR↔AAAI cross-linked). `build_manifest.py` is now
+multi-source; `validate.py` validates card coverage against the manifest (machine-independent) and expects 9 syntheses.
+All gates pass. See `RESEARCH_UPDATE_LOG.md` for the procedure trace. (`FAR04` = existing `A41108`, cross-referenced.)
+
 ## 2026-07-14 — AAAI-26 research base (v2)
 Added an evidence-anchored research-to-engineering layer built from **432 AAAI-26 security papers**
 (`~/Documents/Research Papers/AAAI-Security-2026/`, 8 categories), alongside the existing Virtue-AI
