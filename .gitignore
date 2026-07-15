@@ -1,7 +1,5 @@
 # Raw source PDFs — large + copyrighted; provenance only, never pushed
 corpus/
-# Briefs — consolidated locally; some are private. Force-add selectively if you want to share.
-briefs/
 # Cruft
 .DS_Store
 __pycache__/

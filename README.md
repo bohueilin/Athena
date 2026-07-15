@@ -17,7 +17,10 @@ machines and across AI agents (Claude, Codex, Cursor, ChatGPT). It ships the *sy
 | **`skills/cerebras-hackathon`** | Playbook + hard facts for the Cerebras × Gemma hackathon (model/API gotchas, multi-agent patterns, demo/virality). | small |
 | **`skills/hackathon-prep`** | Hard-won lessons for advancing at hackathons / demo days / pitch competitions (naming, architecture depth). | small |
 
-Not shipped (see [Corpus](#the-corpus--what-its-for)): the raw PDFs and private briefs stay local.
+Also included (**this repo is private**): `briefs/` — cross-project strategy + the canonical
+**`briefs/Origin_Status.md`** (read-first before any Origin work; syncs to your other machines via this
+private repo). Not shipped: the raw source PDFs (`corpus/`, gitignored — large + copyrighted; see
+[Corpus](#the-corpus--what-its-for)).
 
 ---
 
