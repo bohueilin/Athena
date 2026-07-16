@@ -53,6 +53,56 @@
 > confirm** is the human step (no agent has Cloudflare creds). Project env vars carry over on a source
 > repoint; only the lead function's `LEAD_WEBHOOK_URL`/`RESEND_*` are new. `physical-ai-demo-test` stays
 > the rollback until Origin deploys cleanly, then archive it.
+>
+> **── 2026-07-14 addendum (latest; all gated + pushed to `main`) ──**
+>
+> **Positioning pivot (additive, not a rewrite — see `~/hackathons/POSITIONING_SPEC.md`).** Lead narrow:
+> **"the reference check for AI agents before production permission"**; keep the multi-actor platform as
+> the expansion thesis ("one evidence spine, **many domain verifiers**"). Landing hero rewritten to
+> *Check an agent* / *Verify an attestation*; `/simulation` + `/operations` moved off the primary nav into
+> a new **`/labs`** hub ("proof the contract generalizes"). Naming normalized in **public copy only**
+> (code identifiers unchanged): **RSL → "Verified Readiness Level"**, **Sigil → "Origin Attestation"**,
+> **"readiness license" retired** (Origin gives evidence; the customer's gate grants permission),
+> **pricing no longer "priced on the level"** (pay-to-play risk → priced on agents/tools/volume/monitoring).
+> A relatable **refund-support-agent scenario** (`verifier-core/supportGym.mjs`) is the demo hero (refund
+> cap / no-PII / approval-gated bank change → allow/deny/escalate + highlighted over-grant + drift-void),
+> with the IAM gym as "more scenarios."
+>
+> **`/operations` — verified fleet-ops console** (`apps/origin-web/src/simulation/opsMetrics.ts` +
+> `OperationsPage.tsx`): a multi-wave shift tracks utilization / peak-simultaneous / **zero-collision**
+> throughput and earns a **signed operations SLA** only if it clears deterministic targets. Clean-room
+> from the "Worksite" fleet-metrics concept (no code copied; credited in `docs/PRIOR_ART.md`).
+>
+> **Spatial reconstruction (photo/video → floor-map PRD) — the verification-layer play, private.** Rather
+> than train a CV model, Origin becomes the **verification layer for spatial reconstruction**:
+> `origin-factory/site-to-gym/scripts/lib/reconVerifier.mjs` deterministically gates a proposed floor plan
+> (hallucinated *observed* geometry → VOID, invalid/overlapping → VOID, metric-without-scale → VOID,
+> under-observed → ESCALATE) — no trained model needed. Plus a **canonical capture-session schema** with a
+> rights + privacy manifest, and **`SPATIAL_SOURCES.json`** — a 72-dataset cited rights inventory
+> (15 GREEN / 35 YELLOW / 22 RED). Load-bearing finding: paired real RGB→floorplan data with commercial
+> rights barely exists → **own the synthetic (Infinigen/ProcTHOR) + consented capture**; research sets
+> eval-only; never scrape listings. Strategy: `origin-factory/docs/SPATIAL_STRATEGY.md`.
+>
+> **Guardian-agent CPVER security audit** (`~/hackathons/SECURITY_AUDIT_CPVER_2026-07-14.md`, private).
+> Applied the `Athena/skills/guardian-agent-foundations` KB (432-paper AAAI-26 corpus, 28 playbooks,
+> CPVER lens, 5 open seams). **Verdict: the deterministic-oracle cores are sound in isolation; the
+> systemic risk is the connective tissue — authenticity, provenance-binding, cross-zone trust.** 1 P0
+> (cobra oracle report-path forgery — research/loopback, not on the public path), 27 P1, 21 P2. Dominant
+> seam: **root-of-trust is un-owned** (no persistent Sigil issuer key; in-band audit digests; a
+> hand-committed `/trust` scoreboard; a flat shared-secret plane; verifier-core bypassed by the
+> trust-bearing write paths). **Three CPVER one-liners shipped (HEAD `87f5d3c`):** `verifyCredential` now
+> VOIDs on `reward_model_version` drift (+test); all GitHub Actions **SHA-pinned** (was mutable tags); the
+> exposed **`reward_bridge.pyc` removed** from the public tree (source-preserving copy kept in private
+> `origin-factory/_recovered/`) + directory-level ignores added. **Open for the founder** (the authenticity
+> spine): publish a root-of-trust issuer key + pin it on `/verify`; anchor the audit head out-of-band +
+> attest writers; regenerate `/trust`'s `gates-summary.json` in CI and fail on drift; route the
+> trust-bearing paths through `@origin/evidence` as the one canonicalizer; authN + rate-limit the Hono
+> paid/side-effecting endpoints.
+>
+> **Greek/Roman naming in use** (see the handoff doc): **Janus** (Roman god of gates/doorways/transitions —
+> the credential broker + gate), **Chronos** (Greek Titan of time — the reward-hack-discovery service),
+> **Atlas** (Greek Titan — incidental), **Athena** (Greek goddess of wisdom/strategy — this private
+> knowledge-base repo). Non-mythic product names: Origin, Crucible, Sigil→Attestation, Cobra, Foundry.
 
 ---
 
