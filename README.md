@@ -1,3 +1,5 @@
+![Athena](Athena_github.png)
+
 # Athena — the knowledge base
 
 **Athena is the single home for the durable, reusable knowledge I've built** — portable across
@@ -13,7 +15,7 @@ machines and across AI agents (Claude, Codex, Cursor, ChatGPT). It ships the *sy
 
 | Skill | What it is | Size |
 |---|---|---|
-| **`skills/guardian-agent-foundations`** | The flagship: an evidence-anchored decision skill for the **security, safety & privacy of AI agents and systems**. 432 research cards + 8 category syntheses + 8 cross-cutting chapters + **28 control playbooks** + a normalized ontology & relationship graph, all distilled from a 432-paper AAAI-26 security corpus (+ Virtue AI / 1Password briefs / a 2026 field sweep). Every claim traces to a paper id; language is calibrated, never absolute. | ~24 M |
+| **`skills/guardian-agent-foundations`** | The flagship: an evidence-anchored decision skill for the **security, safety & privacy of AI agents and systems**. **447 research cards + 9 category syntheses** + 8 cross-cutting chapters + **28 control playbooks** + a normalized ontology & relationship graph, distilled from a 447-paper corpus (432 AAAI-26 security + 15 FAR AI frontier-lab safety) (+ Virtue AI / 1Password briefs / a 2026 field sweep). Every claim traces to a paper id; language is calibrated, never absolute. | ~25 M |
 | **`skills/cerebras-hackathon`** | Playbook + hard facts for the Cerebras × Gemma hackathon (model/API gotchas, multi-agent patterns, demo/virality). | small |
 | **`skills/hackathon-prep`** | Hard-won lessons for advancing at hackathons / demo days / pitch competitions (naming, architecture depth). | small |
 
@@ -88,7 +90,7 @@ or set `ATHENA_CORPUS=<dir>`.
 
 - **Add papers / refresh:** the skill's `RESEARCH_UPDATE_LOG.md` documents the incremental procedure;
   `scripts/build_manifest.py` (re)builds the inventory, `scripts/assemble_ontology.py` the ontology.
-  Known gap: **FAR AI (15 papers) is not yet ingested.**
+  Corpus fully ingested as of 2026-07-15 (**447 papers**: 432 AAAI-26 + 15 FAR AI); nothing outstanding.
 - **Honesty:** the 28 playbooks are **research-grounded design guidance, not build-ready specs** — see
   `skills/guardian-agent-foundations/references/final-quality-review.md` for the 10-lens review and the
   five open cross-pattern seams.
